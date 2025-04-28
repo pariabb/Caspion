@@ -1,82 +1,67 @@
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Logo from '../assets/pic/Caspion-logo.png';
+import '../assets/css/header.css';
 
-const Navbar = () => {
-  const [navbar, setNavbar] = useState(false);
-  const Navbar = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Services",
-      link: "/services",
-    },
-    {
-      name: "Portfolio",
-      link: "/portfolio",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-  ];
+const Header = () => {
+  const [isSticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <>
-      <nav className="w-full h-auto bg-gray-800 lg:px-24 md:px-16 sm:px-14 px-12 py-2 shadow-md">
-        <div className="justify-between mx-auto lg:w-full md:items-center md:flex">
-          {/* Navbar logo & toggle button section */}
-          <div>
-            <div className="flex items-center justify-between py-1 md:py-1 md:block">
-              {/* Logo section */}
-              <Link className="text-3xl text-orange-500 font-semibold tracking-[0.1rem]">
-                Navbar
-              </Link>
-              <div className="md:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none border border-transparent focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <X className="text-gray-400 cursor-pointer" size={24} />
-                  ) : (
-                    <Menu className="text-gray-400 cursor-pointer" size={24} />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-          {/* NAvbar menu items section */}
-          <div
-            className={`flex justify-between items-center md:block ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            <ul className="list-none lg:flex md:flex sm:block block gap-x-5 gap-y-16">
-              {Navbar.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    to={item.link}
-                    className="text-gray-400 text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-              <button className="bg-orange-500 text-[1.1rem] font-normal text-white px-5 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
-                Account
-              </button>
+    <header className={`main-header ${isSticky ? 'fixed-top shadow-sm bg-white' : ''}`}>
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+         
+          <a className="navbar-brand fw-bold" href="#">
+            <img className="logo" src={Logo} alt="Logo" style={{ height: '70px' }} />
+          </a>
+
+          
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+        
+          <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul className="navbar-nav gap-4">
+              <li className="nav-item">
+                <NavLink className="nav-link custom-link" to="/">Home</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link custom-link" to="/about">About Us</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link custom-link" to="/products">Our Products</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link custom-link" to="/projects">Projects</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link custom-link" to="/partners">Partners</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link custom-link" to="/contact">Contact Us</NavLink>
+              </li>
             </ul>
+          </div>
+
+        
+          <div className=" d-lg-block d-md-block d-sm-block">
+            <a href="#" className="btn btn-primary fw-bold rounded-pill px-4 py-2">AZ</a>
           </div>
         </div>
       </nav>
-    </>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;
