@@ -3,35 +3,37 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
-import SwiperImg1 from '../assets/pic/SwiperImg1.avif'
-import SwiperImg2 from '../assets/pic/SwiperImg2.jpeg'
-import SwiperImg3 from '../assets/pic/SwiperImg3.jpeg'
+// import SwiperImg1 from '../assets/pic/SwiperImg1.avif'
+// import SwiperImg2 from '../assets/pic/SwiperImg2.jpeg'
+// import SwiperImg3 from '../assets/pic/SwiperImg3.jpeg'
+// import SwipeImg4 from '../assets/pic/SwipeImg4.jpg'
+
 
 
 const ConstructionSlider = () => {
   const slides = [
     {
-      image: SwiperImg1,
-      title: "Building the Future",
-      subtitle: "Modern Construction Solutions",
+      image: 'https://images.unsplash.com/photo-1645651964715-d200ce0939cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: "Smart Procurement Solutions",
+      subtitle: "Optimize your supply chain with data-driven purchasing and seamless vendor integration.",
       buttonText: "Learn More"
     },
     {
-      image: SwiperImg2,
-      title: "Reliable Construction",
-      subtitle: "Strong Foundations, Strong Future",
+      image: 'https://images.unsplash.com/photo-1609867271967-a82f85c48531?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: "Reliable Global Sourcing",
+      subtitle: "We connect you with trusted suppliers worldwide — quality, speed, and transparency guaranteed.",
       buttonText: "Our Projects"
     },
     {
-      image: SwiperImg3,
-      title: "Innovative Design",
-      subtitle: "Crafting Excellence",
+      image: 'https://ybholding.com.tr/wp-content/uploads/2023/08/insaat.jpg',
+      title: "End-to-End Procurement Services",
+      subtitle: "From market analysis to delivery, we manage every step so you can focus on what matters most.",
       buttonText: "Contact Us"
     }
   ];
 
   return (
-    <div style={{ width: '100%', height: '80vh', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ width: '100%', height: '87vh', position: 'relative', overflow: 'hidden' }}>
       <Swiper
         modules={[EffectFade, Autoplay]}
         effect="fade"
@@ -42,7 +44,6 @@ const ConstructionSlider = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div style={{ width: '100%', height: '90vh', position: 'relative', overflow: 'hidden' }}>
-              {/* Background Image with Zoom */}
               <motion.img
                 src={slide.image}
                 alt={slide.title}
@@ -57,14 +58,12 @@ const ConstructionSlider = () => {
                 }}
               />
 
-              {/* Dark Gradient Overlay */}
               <div style={{
                 position: 'absolute',
                 inset: 0,
                 background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7))'
               }} />
 
-              {/* Animated Text and Button */}
               <div style={{
                 position: 'absolute',
                 top: '50%',
@@ -83,7 +82,7 @@ const ConstructionSlider = () => {
                   transition={{ duration: 1 }}
                   style={{
                     fontSize: 'clamp(2rem, 5vw, 4rem)',
-                    marginBottom: '0.5rem',
+                    marginBottom: '1rem',
                     lineHeight: '1.2'
                   }}
                 >
@@ -94,14 +93,13 @@ const ConstructionSlider = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.3 }}
                   style={{
-                    fontSize: 'clamp(1rem, 2.5vw, 1.8rem)',
-                    marginBottom: '1.5rem'
+                    fontSize: 'clamp(0.8rem, 1.5vw, 1.2rem)', 
+                    marginBottom: '2rem'
                   }}
                 >
                   {slide.subtitle}
                 </motion.p>
 
-                {/* Animated Button */}
                 <motion.a
                   href="#"
                   whileHover={{ scale: 1.1, boxShadow: "0px 4px 15px rgba(255,255,255,0.4)" }}

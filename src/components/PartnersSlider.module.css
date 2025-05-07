@@ -1,0 +1,82 @@
+.wrapper {
+  padding: 60px 20px;
+  background-color: #fffdfd;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #070A17;
+}
+
+.swiper {
+  padding: 40px 0;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 170px;
+  height: 80px;
+  object-fit: contain;
+  background-color: #fffdfd;
+  padding: 5px;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+}
+
+.slide img:hover {
+  filter: grayscale(50%);
+  scale: calc(1.1);
+
+}
+
+/* Partner 13 - arxa fon */
+.partner13 {
+  background-color: black !important;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+/* Partner 9 - xüsusi ölçü */
+.partner9 {
+  width: 250px !important;
+}
+
+/* ===================== Responsive ===================== */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .slide img {
+    width: 130px;
+    height: 60px;
+  }
+
+  .partner9 {
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .slide img {
+    width: 110px;
+    height: 50px;
+  }
+
+  .partner9 {
+    width: 160px !important;
+  }
+}

@@ -1,0 +1,131 @@
+.heroSection {
+  position: relative;
+  background: linear-gradient(135deg, #0a0f24, #1c2541);
+  color: #fff;
+  padding: 120px 20px 100px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.heroTitle {
+  font-size: 42px;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heroDescription {
+  font-size: 18px;
+  color: #dddddd;
+  margin-bottom: 30px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.primaryButton {
+  background: #0078c8;
+  color: #fff;
+}
+
+.primaryButton:hover {
+  background: none;
+  color: #fff;
+  border: 2px solid #0078c8;
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 2px solid #0078c8;
+  color: #fff;
+}
+
+.secondaryButton:hover {
+  background: #0078c8;
+  color: #fff;
+}
+
+.multiImageGroup {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-top: 20px; /* Azaldılmış məsafə */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 şəkil hər sətirdə */
+  grid-template-rows: 1fr 1fr; /* 2 sətir */
+  gap: 25px; /* Azaldılmış məsafə */
+  justify-items: center;
+  z-index: 5;
+}
+
+.floatingImage {
+  width: 500px; /* Şəkilləri daha böyük etmək */
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.floatingImage:hover {
+  transform: scale(1.05);
+}
+
+/* Mobil üçün */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 30px; /* Mobil üçün başlıq ölçüsünü azaldır */
+  }
+
+  .heroDescription {
+    font-size: 16px; /* Mobil üçün təsvir ölçüsünü azaldır */
+  }
+
+  .multiImageGroup {
+    grid-template-columns: 1fr; /* Mobil üçün yalnız 1 şəkil hər sətirdə */
+    grid-template-rows: auto; /* Hər bir şəkil avtomatik olaraq hündürlüyünü tənzimləyəcək */
+    gap: 10px; /* Mobil üçün məsafəni daha da azaldır */
+  }
+
+  .floatingImage {
+    width: 100%; /* Mobil üçün şəkillərin tam genişlikdə olması */
+    height: auto; /* Hündürlük avtomatik olaraq tənzimlənəcək */
+  }
+}

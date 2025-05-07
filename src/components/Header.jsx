@@ -6,6 +6,7 @@ import '../assets/css/header.css';
 
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,46 +17,45 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return (
-    <header className={`main-header ${isSticky ? 'fixed-top shadow-sm bg-white' : ''}`}>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container">
-         
-          <a className="navbar-brand fw-bold" href="#">
-            <img className="logo" src={Logo} alt="Logo" style={{ height: '70px' }} />
-          </a>
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
-          
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span className="navbar-toggler-icon"></span>
+  return (
+    <header className={`main-header ${isSticky ? 'shrink fixed-top' : ''}`}>
+      <nav className="navbar navbar-expand-lg">
+        <div className="container d-flex align-items-center justify-content-between">
+
+          <NavLink className="navbar-brand fw-bold" to="/">
+            <img className="logo" src={Logo} alt="Logo" />
+          </NavLink>
+
+          <div className="lang-button d-lg-none d-md-block d-sm-block mx-auto">
+            <a href="#" className="btn btn-primary fw-bold rounded-pill px-4 py-2">AZ</a>
+          </div>
+
+          <button
+            className="custom-toggler d-lg-none"
+            type="button"
+            onClick={toggleMenu}
+            aria-label="Toggle navigation"
+          >
+            {isMenuOpen ? 'X' : '☰'}
           </button>
 
-        
-          <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <div className={`collapse navbar-collapse justify-content-center ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav gap-4">
-              <li className="nav-item">
-                <NavLink className="nav-link custom-link" to="/">Home</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link custom-link" to="/about">About Us</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link custom-link" to="/products">Our Products</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link custom-link" to="/projects">Projects</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link custom-link" to="/partners">Partners</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link custom-link" to="/contact">Contact Us</NavLink>
-              </li>
+              {['/', '/about', '/products', '/projects', '/partners', '/contact'].map((path, i) => (
+                <li className="nav-item" key={i}>
+                  <NavLink to={path} className={({ isActive }) => "nav-link custom-link" + (isActive ? " active" : "")}>
+                    {['Home', 'About Us', 'Our Products', 'Projects', 'Partners', 'Contact Us'][i]}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
 
-        
-          <div className=" d-lg-block d-md-block d-sm-block">
+          <div className="d-none d-lg-block">
             <a href="#" className="btn btn-primary fw-bold rounded-pill px-4 py-2">AZ</a>
           </div>
         </div>

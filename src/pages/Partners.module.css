@@ -1,0 +1,95 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0A0F24;
+    margin-bottom: 50px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .logo {
+    width: 160px;
+    height: 90px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+  }
+  
+  /* Partner 13 - qara fon */
+  .partner13 {
+    background-color: black;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
+  /* Partner 9 - daha böyük ölçü */
+  .partner9 {
+    width: 190px !important;
+    height: 110px !important;
+  }
+  .description {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .cta {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: #eef1ff;
+    border-radius: 16px;
+  }
+  
+  .cta h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0A0F24;
+  }
+  
+  .cta p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    background-color: #0A0F24;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #1c2640;
+  }
+  

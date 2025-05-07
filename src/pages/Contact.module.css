@@ -1,0 +1,147 @@
+.wrapper {
+    padding: 60px 20px;
+    background-color: #e7f4ff;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0A0F24;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .contactInfo {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .infoItem {
+    width: 250px;
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .infoItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .infoItem h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A0F24;
+  }
+  
+  .infoItem p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .icon {
+    font-size: 36px;
+    color: #0A0F24;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .infoItem:hover .icon {
+    color: #1c2640;
+    transform: scale(1.2);
+  }
+  
+  .form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .inputWrapper {
+    margin-bottom: 15px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border 0.3s ease, transform 0.3s ease;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: #0A0F24;
+    transform: scale(1.05);
+  }
+  
+  .textarea {
+    min-height: 120px;
+  }
+  
+  .submitButton {
+    background-color: #0A0F24;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #1c2640;
+    transform: translateY(-3px);
+  }
+  
+  /* Map Styling */
+  .mapWrapper {
+    margin-top: 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsivlik */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .contactInfo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .infoItem {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  

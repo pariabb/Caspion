@@ -1,0 +1,110 @@
+/* Global reset (əgər istifadə etməmisənsə əlavə et) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* SECTION */
+.construction-advanced-section {
+  background: linear-gradient(to bottom, #eaeaff, #0f1223);
+  /* background-image: url('https://plus.unsplash.com/premium_photo-1675747966994-fed6bb450c31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* CARD */
+.construction-advanced-card {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(22, 120, 217, 0.25);
+  border-radius: 20px;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.construction-advanced-card.left {
+  flex-direction: row;
+}
+
+.construction-advanced-card.right {
+  flex-direction: row-reverse;
+}
+
+.construction-advanced-card:hover {
+  transform: scale(1.02);
+}
+
+/* IMAGE */
+.construction-advanced-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* TEXT */
+.construction-advanced-text {
+  background: #12298e;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.construction-advanced-text h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.construction-advanced-text p {
+  color: #d1d1d1;
+  font-size: 18px;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .construction-advanced-card {
+    flex-direction: column !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .construction-advanced-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .construction-advanced-text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .construction-advanced-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .construction-advanced-text p {
+    font-size: 16px;
+  }
+}

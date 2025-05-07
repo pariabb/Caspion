@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Header'
 import Home from './pages/Home'
@@ -7,6 +7,8 @@ import Products from './pages/Products'
 import Projects from './pages/Projects'
 import Partners from './pages/Partners'
 import Contact from './pages/Contact'
+import Footer from './components/Footer';
+import NotFoundPage from './pages/NotFoundPage';
 
 const Main = () => {
   return (
@@ -20,7 +22,10 @@ const Main = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFoundPage />} />
+
         </Routes>
+        <Footer />
       </div>
     </>
   );
@@ -28,6 +33,9 @@ const Main = () => {
 
 const App = () => {
 
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <BrowserRouter>
