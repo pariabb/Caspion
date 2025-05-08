@@ -62,7 +62,7 @@ const Footer = () => {
           <h4>Subscribe to updates</h4>
           <form>
             <input type="email" placeholder="Your email" />
-            <button type="submit">Subscribe</button>
+            <button type="submit" className="mt-2">Subscribe</button>
           </form>
 
           <div className={styles.socials}>

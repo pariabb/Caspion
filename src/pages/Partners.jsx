@@ -29,18 +29,20 @@ import partner23 from "../assets/pic/partners/Site-Logo-Fibconet.png";
 import partner24 from "../assets/pic/partners/SPIG-GMAB_logo.png";
 import partner25 from "../assets/pic/partners/tasa_logo.png";
 import partner26 from "../assets/pic/partners/tekodak_logo.webp";
-import partner27 from "../assets/pic/partners/texelektronik_logo.webp";
+import partner27 from "../assets/pic/partners/texelektro_logo.svg";
 import partner28 from "../assets/pic/partners/tomskabel_logo.jpg";
 import partner29 from "../assets/pic/partners/uzar_logo.jpg";
 import partner30 from "../assets/pic/partners/vindustries_logo.png";
 import partner31 from "../assets/pic/partners/Yokogawa_Logo.webp";
+import partner32 from "../assets/pic/partners/kabelni_alyans_logo.png";
+import partner33 from "../assets/pic/partners/iport_logo.png";
 
 const partners = [
   partner1, partner2, partner3, partner4, partner5, partner6, partner7,
   partner8, partner9, partner10, partner11, partner12, partner13,
   partner14, partner15, partner16, partner17, partner18, partner19,
   partner20, partner21, partner22, partner23, partner24, partner25,
-  partner26, partner27, partner28, partner29, partner30, partner31
+  partner26, partner27, partner28, partner29, partner30, partner31,partner32,partner33
 ];
 
 const Partners = () => {

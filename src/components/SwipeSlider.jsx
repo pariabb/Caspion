@@ -3,6 +3,8 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+
 // import SwiperImg1 from '../assets/pic/SwiperImg1.avif'
 // import SwiperImg2 from '../assets/pic/SwiperImg2.jpeg'
 // import SwiperImg3 from '../assets/pic/SwiperImg3.jpeg'
@@ -11,24 +13,32 @@ import { motion } from 'framer-motion';
 
 
 const ConstructionSlider = () => {
+
+  const navigate = useNavigate();
+
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1645651964715-d200ce0939cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://assteel.com.tr/wp-content/uploads/2023/03/pexels-nicole-rathmayr-220885-scaled.jpg',
       title: "Smart Procurement Solutions",
       subtitle: "Optimize your supply chain with data-driven purchasing and seamless vendor integration.",
-      buttonText: "Learn More"
+      buttonText: "Learn More",
+      path: '/about'
     },
     {
       image: 'https://images.unsplash.com/photo-1609867271967-a82f85c48531?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: "Reliable Global Sourcing",
       subtitle: "We connect you with trusted suppliers worldwide — quality, speed, and transparency guaranteed.",
-      buttonText: "Our Projects"
+      buttonText: "Our Projects",
+      path: '/projects'
+
     },
     {
-      image: 'https://ybholding.com.tr/wp-content/uploads/2023/08/insaat.jpg',
+      image: 'https://images.unsplash.com/photo-1645651964715-d200ce0939cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: "End-to-End Procurement Services",
       subtitle: "From market analysis to delivery, we manage every step so you can focus on what matters most.",
-      buttonText: "Contact Us"
+      buttonText: "Contact Us",
+      path: '/contact'
+
     }
   ];
 
@@ -93,31 +103,34 @@ const ConstructionSlider = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.3 }}
                   style={{
-                    fontSize: 'clamp(0.8rem, 1.5vw, 1.2rem)', 
+                    fontSize: 'clamp(0.8rem, 1.5vw, 1.2rem)',
                     marginBottom: '2rem'
                   }}
                 >
                   {slide.subtitle}
                 </motion.p>
 
-                <motion.a
-                  href="#"
+                <motion.button
+                  onClick={() => navigate(slide.path)}
                   whileHover={{ scale: 1.1, boxShadow: "0px 4px 15px rgba(255,255,255,0.4)" }}
                   style={{
                     display: 'inline-block',
                     padding: '12px 30px',
-                    backgroundColor: '#ffffff',
-                    color: '#000',
+                    backgroundColor: '#003D93',
+                    color: '#fff',
+                    height: "55px",
                     borderRadius: '30px',
-                    fontWeight: '600',
-                    fontSize: 'clamp(0.9rem, 2vw, 1rem)',
+                    fontWeight: '400',
+                    fontSize: 'clamp(1.1rem, 2vw, 1rem)',
                     textDecoration: 'none',
                     transition: 'all 0.3s ease',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    border: 'none'
                   }}
                 >
                   {slide.buttonText}
-                </motion.a>
+                </motion.button>
+
               </div>
             </div>
           </SwiperSlide>

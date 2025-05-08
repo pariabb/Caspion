@@ -47,6 +47,7 @@
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .primaryButton,
@@ -61,8 +62,9 @@
 }
 
 .primaryButton {
-  background: #0078c8;
+  background: #0056b3;
   color: #fff;
+
 }
 
 .primaryButton:hover {
@@ -85,7 +87,7 @@
 .multiImageGroup {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: auto;
   margin-top: 20px; /* Azaldılmış məsafə */
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 şəkil hər sətirdə */

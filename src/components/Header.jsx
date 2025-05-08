@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Logo from '../assets/pic/Caspion-logo.png';
 import '../assets/css/header.css';
@@ -7,6 +7,11 @@ import '../assets/css/header.css';
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
