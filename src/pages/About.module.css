@@ -26,7 +26,8 @@
     margin-bottom: 16px;
     color: #333;
 }
-.block2 p{
+
+.block2 p {
     color: #ffffff !important;
 }
 
@@ -40,6 +41,8 @@
     max-width: 1100px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    filter: brightness(0.5);
+
 }
 
 .card {
@@ -73,14 +76,13 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .readMoreButton:hover {
+}
+
+.readMoreButton:hover {
     background-color: #2744a3;
-  }
-  
-  .aboutPage {
+}
+
+.aboutPage {
     background: linear-gradient(to bottom, #ffffff 0%, #e6ecff 30%, #cdd6ff 60%, #0a0f24 100%);
     padding: 40px 20px;
-  }
-  
+}

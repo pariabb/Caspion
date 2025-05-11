@@ -50,10 +50,10 @@ const Header = () => {
 
           <div className={`collapse navbar-collapse justify-content-center ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav gap-4">
-              {['/', '/about', '/products', '/projects', '/partners', '/contact'].map((path, i) => (
+              {['/', '/about', '/products', '/references', '/partners', '/contact'].map((path, i) => (
                 <li className="nav-item" key={i}>
                   <NavLink to={path} className={({ isActive }) => "nav-link custom-link" + (isActive ? " active" : "")}>
-                    {['Home', 'About Us', 'Our Products', 'Projects', 'Partners', 'Contact Us'][i]}
+                    {['Home', 'About Us', 'Our Products', 'References', 'Partners', 'Contact Us'][i]}
                   </NavLink>
                 </li>
               ))}

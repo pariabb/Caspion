@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 60px 20px;
+  padding: 35px 20px;
   background-color: #fffdfd;
   text-align: center;
 }
@@ -37,19 +37,33 @@
 
 }
 
-/* Partner 13 - arxa fon */
 .partner13 {
   background-color: black !important;
   padding: 5px;
   border-radius: 6px;
 }
 
-/* Partner 9 - xüsusi ölçü */
 .partner9 {
   width: 250px !important;
 }
 
-/* ===================== Responsive ===================== */
+.wrapper button {
+  background-color: #172350 !important;
+  color: #fffdfd;
+  border-radius: 30px !important;
+  border: 1px solid #070A17;
+  padding: 13px 30px !important;
+  cursor: pointer;
+  margin-top: 10px !important;
+
+}
+
+.wrapper button:hover {
+  background-color: #fffdfd !important;
+  color: #070A17 !important;
+  border: 1px solid #070A17;
+  font-weight: 600 !important;
+}
 
 @media (max-width: 768px) {
   .title {

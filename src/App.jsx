@@ -4,11 +4,12 @@ import Navbar from './components/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Products from './pages/Products'
-import Projects from './pages/Projects'
+import References from './pages/References'
 import Partners from './pages/Partners'
 import Contact from './pages/Contact'
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFoundPage';
+import ProductDetail from './pages/ProductDetail';
 
 const Main = () => {
   return (
@@ -19,7 +20,8 @@ const Main = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/references" element={<References />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFoundPage />} />

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./PartnersSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
+import { Link } from "react-router-dom";
 import "swiper/css";
 
 import partner1 from "../assets/pic/partners/Babcock_&_Wilcox_logo.png";
@@ -46,7 +46,7 @@ import partner33 from "../assets/pic/partners/iport_logo.png";
 const PartnersSlider = () => {
   const partners = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9, partner10, partner11, partner12
     , partner13, partner14, partner15, partner16, partner17, partner18, partner19, partner20, partner21, partner22, partner23, partner24, partner25
-    , partner26, partner27, partner28, partner29, partner30, partner31,partner32,partner33];
+    , partner26, partner27, partner28, partner29, partner30, partner31, partner32, partner33];
 
   return (
     <div className={styles.wrapper}>
@@ -57,7 +57,7 @@ const PartnersSlider = () => {
         spaceBetween={30}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -75,8 +75,13 @@ const PartnersSlider = () => {
               className={`${idx === 12 ? styles.partner13 : ""} ${idx === 8 ? styles.partner9 : ""}`}
             />
           </SwiperSlide>
+
         ))}
+
       </Swiper>
+      <Link to='/partners'>
+        <button className="btn">Learn More</button>
+      </Link>
     </div>
   );
 };

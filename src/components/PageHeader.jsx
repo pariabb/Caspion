@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./PageHeader.module.css";
 import { Link } from "react-router-dom";
 
-const PageHeader = ({ title, backgroundImage }) => {
+const PageHeader = ({ title, breadcrumb }) => {
+  const backgroundImage = "https://nsc.anu.edu.au/sites/default/files/styles/hero/public/2024-06/Underseacables_Adobe%20stock.jpg?itok=dRYBBzsy"; 
+
   return (
     <div
       className={styles.pageHeader}
@@ -12,10 +14,16 @@ const PageHeader = ({ title, backgroundImage }) => {
       <div className={styles.content}>
         <h1>{title}</h1>
         <p>
-          <Link to="/" className={styles.homeLink}>
-            Home
-          </Link>{" "}
-          / {title}
+          {breadcrumb ? (
+            breadcrumb
+          ) : (
+            <>
+              <Link to="/" className={styles.homeLink}>
+                Home
+              </Link>{" "}
+              / {title}
+            </>
+          )}
         </p>
       </div>
     </div>
