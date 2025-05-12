@@ -1,9 +1,10 @@
-import React from 'react'
-import SwipeSlider from '../components/SwipeSlider'
+import React from 'react';
+import SwipeSlider from '../components/SwipeSlider';
 import { motion } from "framer-motion";
-import '../assets/css/home.css'
+import '../assets/css/home.css';
 import PartnersSlider from '../components/PartnersSlider';
 import HeroSection from '../components/HeroSection';
+
 const Home = () => {
     const projects = [
         {
@@ -32,22 +33,19 @@ const Home = () => {
         },
     ];
 
-
-
     return (
         <div>
             <SwipeSlider />
-
 
             <div className="construction-advanced-section">
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.id}
                         className={`construction-advanced-card ${index % 2 === 0 ? "left" : "right"}`}
-                        initial={{ x: index % 2 === 0 ? -200 : 200, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: false, amount: 0.5 }}
-                        transition={{ type: "spring", stiffness: 60, damping: 20 }}
+                        initial={{ opacity: 0, y: 60 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                     >
                         <img
                             src={project.imageUrl}
@@ -64,13 +62,9 @@ const Home = () => {
 
 
             <HeroSection />
-
             <PartnersSlider />
-
-
-
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

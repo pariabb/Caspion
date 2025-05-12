@@ -1,46 +1,59 @@
 .pageHeader {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: "Segoe UI", sans-serif;
-  }
-  
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2;
-  }
-  
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 20px;
+  color: #dddddd;
+}
+
+.homeLink {
+  color: #F4B416;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.homeLink:hover {
+  color: #fff;
+}
+
+@media (max-width:768px) {
   .content h1 {
-    font-size: 60px;
+    font-size: 35px !important;
     margin-bottom: 10px;
   }
-  
+
   .content p {
-    font-size: 20px;
-    color: #dddddd;
-  }
-  
-  .homeLink {
-    color:#F4B416;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    transition: color 0.3s ease;
-  }
-  
-  .homeLink:hover {
-    color: #fff;
-  }
-  
+  font-size: 15px;
+  color: #dddddd;
+}
+
+
+}
