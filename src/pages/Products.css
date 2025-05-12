@@ -22,6 +22,8 @@
   height: 200px;
   object-fit: cover;
   transition: transform 0.4s ease;
+  filter: brightness(0.6);
+
 }
 
 .product-card:hover img {

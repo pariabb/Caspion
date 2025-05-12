@@ -9,7 +9,6 @@ const Products = () => {
     <div>
       <PageHeader
         title="Products"
-        backgroundImage="https://images.unsplash.com/photo-1645651964715-d200ce0939cc?q=80&w=2070&auto=format&fit=crop"
       />
       <div className="product-grid">
         {products.map((item) => (
