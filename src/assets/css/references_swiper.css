@@ -1,0 +1,52 @@
+.references-swiper-section {
+  padding: 60px 5px; 
+  background: #f5f8ff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #003d93;
+  margin-bottom: 40px;
+}
+
+.references-swiper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10px 50px 10px; 
+}
+
+.logo-slide {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 25px rgba(0, 61, 147, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 140px;
+  transition: transform 0.3s ease;
+}
+
+.logo-slide:hover {
+  transform: scale(1.05);
+}
+
+.client-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo-slide {
+    width: 180px;
+    height: 100px;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}

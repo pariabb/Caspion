@@ -4,34 +4,38 @@ import 'swiper/css/effect-fade';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import SwiperImg1 from '../assets/pic/homepic/swipeimg1.avif'
+import SwiperImg2 from '../assets/pic/homepic/swipeimg2.avif'
+import SwiperImg3 from '../assets/pic/homepic/swipeimg3.avif'
+
+
 
 const SwipeSlider = () => {
   const navigate = useNavigate();
 
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1688367622226-0d0d9e10e0d8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: "Smart Procurement Solutions",
-      subtitle: "Optimize your supply chain with data-driven purchasing and seamless vendor integration.",
-      buttonText: "Learn More",
+      image: SwiperImg1,
+      title: "Yüksək Texnologiyalı Təchizat",
+      subtitle: "İnnovativ həllərlə təchizat zəncirinizi rəqəmsallaşdırın və xərcləri azaldın.",
+      buttonText: "Ətraflı Bax",
       path: '/about'
     },
     {
-      image: 'https://images.unsplash.com/photo-1529269421632-e9253d14d3a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: "Reliable Global Sourcing",
-      subtitle: "We connect you with trusted suppliers worldwide — quality, speed, and transparency guaranteed.",
-      buttonText: "Our Projects",
-      path: '/projects'
+      image: SwiperImg2 ,
+      title: "Etibarlı Beynəlxalq Tərəfdaşlıq",
+      subtitle: "Sizi dünya üzrə sınaqdan keçmiş təchizatçılarla birləşdiririk — keyfiyyət və şəffaflıq ön plandadır.",
+      buttonText: "Referanslarımız",
+      path: '/references'
     },
     {
-      image: 'https://images.unsplash.com/photo-1618840626133-54463084a141?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: "End-to-End Procurement Services",
-      subtitle: "From market analysis to delivery, we manage every step so you can focus on what matters most.",
-      buttonText: "Contact Us",
+      image: SwiperImg3,
+      title: "Tam Əhatəli Satınalma Xidməti",
+      subtitle: "Analizdən çatdırılmaya qədər — bütün mərhələləri biz idarə edirik, siz isə öz işinizə fokuslanırsınız.",
+      buttonText: "Bizimlə Əlaqə",
       path: '/contact'
     }
   ];
-
   return (
     <div className="slider-wrapper">
       <Swiper

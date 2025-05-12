@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./PageHeader.module.css";
 import { Link } from "react-router-dom";
+import PageHeaderImg from '/products/submarine.jpg'
 
 const PageHeader = ({ title, breadcrumb }) => {
-  const backgroundImage = "https://nsc.anu.edu.au/sites/default/files/styles/hero/public/2024-06/Underseacables_Adobe%20stock.jpg?itok=dRYBBzsy"; 
+  const backgroundImage = PageHeaderImg; 
 
   return (
     <div

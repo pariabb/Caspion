@@ -39,11 +39,11 @@ const referenceData = [
   { id: 4, name: 'Aztelekom', logo: aztelekom },
   { id: 5, name: 'Bakı Metropoliteni QSC', logo: metro },
   { id: 6, name: 'Naxçıvan MR Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: naxcivan },
-  { id: 7, name: 'İri Şəhərlərin Birləşmiş Su Təchizatı Xidməti', logo: isbsu },
+  { id: 7, name: 'SOCAR', logo: socar },
   { id: 8, name: 'Azərbaycan Respublikası Müdafiə Nazirliyi', logo: mod },
   { id: 9, name: 'North West Construction LLC', logo: nwc },
   { id: 10, name: 'Silk Way West Airlines', logo: silkway },
-  { id: 11, name: 'SOCAR', logo: socar },
+  { id: 11, name: 'AS İnşaat', logo: asinshaat },
   { id: 12, name: 'SOCAR Downstream', logo: downstream },
   { id: 13, name: 'Sumgait Technologies Park STP', logo: stp },
   { id: 14, name: 'Bakubus LLC', logo: bakubus },
@@ -59,7 +59,7 @@ const referenceData = [
   { id: 24, name: 'Tekiz İnşaat', logo: tekiz },
   { id: 25, name: 'Agrarco', logo: agrarco },
   { id: 26, name: 'Archico', logo: archico },
-  { id: 27, name: 'AS İnşaat', logo: asinshaat }
+  { id: 27, name: 'İri Şəhərlərin Birləşmiş Su Təchizatı Xidməti', logo: isbsu }
 ];
 
 const References = () => {
@@ -70,20 +70,20 @@ const References = () => {
         backgroundImage="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2070"
       />
 
-      <div className="reference-container">
-        {referenceData.map((ref) => (
-          <div className="reference-card" key={ref.id}>
-            <div className="reference-logo">
-              <img src={ref.logo} alt={ref.name} />
+      <section className="reference-grid-section">
+        <div className="reference-grid">
+          {referenceData.map((ref) => (
+            <div className="reference-card" key={ref.id}>
+              <div className="reference-logo">
+                <img src={ref.logo} alt={ref.name} />
+              </div>
+              <div className="reference-info">
+                <h3><FaHandshake /> {ref.name}</h3>
+              </div>
             </div>
-            <div className="reference-info">
-              <h3>
-                <FaHandshake /> {ref.name}
-              </h3>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

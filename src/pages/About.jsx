@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageHeader from '../components/PageHeader';
 import styles from './About.module.css';
+import AboutImg from '../assets/pic/about_img.avif'
 
 const About = () => {
   const [showMoreMain, setShowMoreMain] = useState(false);
@@ -67,7 +68,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://plus.unsplash.com/premium_photo-1716981836382-f7bcda1889d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={AboutImg}
               alt="Caspion Team"
               className={styles.image}
             />
