@@ -27,46 +27,50 @@ const referenceData = [
 const References = () => {
   const [activeId, setActiveId] = useState(null);
 
-  const toggle = (id) => {
-    setActiveId((prev) => (prev === id ? null : id));
+  const toggleCard = (id) => {
+    setActiveId((prevId) => (prevId === id ? null : id));
   };
 
   return (
     <div className="reference-container">
-      {referenceData.map((ref) => (
-        <motion.div
-          key={ref.id}
-          className="reference-card"
-          onClick={() => toggle(ref.id)}
-          initial={false}
-          animate={{ scale: 1 }}
-          whileHover={{ scale: 1.03 }}
-        >
-          <div className="reference-logo">
-            <img src={ref.logo} alt={ref.name} />
-          </div>
-          <div className="reference-info">
-            <h3>
-              <FaHandshake /> {ref.name}
-            </h3>
+      {referenceData.map((ref) => {
+        const isActive = activeId === ref.id;
 
-            <AnimatePresence mode="wait">
-              {activeId === ref.id && (
-                <motion.div
-                  key={`desc-${ref.id}`} // <-- BU MÜTLƏQ LAZIMDIR!
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <p className="reference-desc">{ref.description}</p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+        return (
+          <motion.div
+            key={ref.id}
+            className={`reference-card ${isActive ? 'active' : ''}`}
+            onClick={() => toggleCard(ref.id)}
+            whileHover={{ scale: 1.03 }}
+            layout
+            transition={{ layout: { duration: 0.4, ease: 'easeInOut' } }}
+          >
+            <div className="reference-logo">
+              <img src={ref.logo} alt={ref.name} />
+            </div>
+            <div className="reference-info">
+              <h3>
+                <FaHandshake />
+                {ref.name}
+              </h3>
 
-          </div>
-        </motion.div>
-      ))}
+              <AnimatePresence>
+                {isActive && (
+                  <motion.div
+                    key="desc"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="reference-desc">{ref.description}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        );
+      })}
     </div>
   );
 };
