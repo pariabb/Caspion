@@ -35,21 +35,21 @@ const Footer = () => {
           <div>
             <h4>Company</h4>
             <ul>
-              {['About', 'Careers', 'Blog'].map((item, idx) => (
+              {['About Us', 'References', 'Partners', 'Our Missions'].map((item, idx) => (
                 <motion.li key={idx} {...listItemHover}>{item}</motion.li>
               ))}
             </ul>
           </div>
           <div>
-            <h4>Solutions</h4>
+            <h4>Services</h4>
             <ul>
-              {['For Suppliers', 'For Enterprises', 'Pricing'].map((item, idx) => (
+              {['Procurement Solutions','For Suppliers', 'For Enterprises', 'Pricing'].map((item, idx) => (
                 <motion.li key={idx} {...listItemHover}>{item}</motion.li>
               ))}
             </ul>
           </div>
           <div>
-            <h4>Support</h4>
+            <h4>Contact </h4>
             <ul>
               {['Help Center', 'Contact Us', 'Privacy Policy'].map((item, idx) => (
                 <motion.li key={idx} {...listItemHover}>{item}</motion.li>

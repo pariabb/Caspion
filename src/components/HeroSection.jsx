@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./HeroSec.module.css";
 import { Link } from "react-router-dom";
- import HeroImg1 from "../assets/pic/homepic/heroimg1.avif";
-  import HeroImg2 from "../assets/pic/homepic/heroimg2.avif";
- import HeroImg3 from "../assets/pic/homepic/heroimg3.avif";
- import HeroImg4 from "../assets/pic/homepic/heroimg4.avif";
+import HeroImg1 from "../assets/pic/homepic/heroimg1.avif";
+import HeroImg2 from "../assets/pic/homepic/heroimg2.avif";
+import HeroImg3 from "../assets/pic/homepic/heroimg3.avif";
+import HeroImg4 from "../assets/pic/homepic/heroimg4.avif";
 
 
 
@@ -43,13 +43,13 @@ const HeroSection = () => {
           viewport={{ once: false, amount: 0.4 }}
         >
           <motion.h1 className={styles.heroTitle} variants={fadeUp}>
-            Empower Your Business with Smart Procurement
+            Trusted Solutions for Telecom and Industrial Procurement
           </motion.h1>
 
           <motion.p className={styles.heroDescription} variants={fadeUp}>
-            Transform the way you manage procurement and supply chain with our
-            intelligent and automated solutions.
+            Delivering certified equipment, expert service, and tailored procurement for infrastructure, energy, and communication sectors.
           </motion.p>
+
 
 
           <motion.div className={styles.heroButtons} variants={fadeUp}>
@@ -78,7 +78,7 @@ const HeroSection = () => {
             src={HeroImg1}
             alt="Swipe 1"
             className={styles.floatingImage}
-            variants={floatIn(-100, 0)} 
+            variants={floatIn(-100, 0)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.4 }}

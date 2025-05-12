@@ -32,7 +32,7 @@
 
 .linksSection {
   display: flex;
-  gap: 60px;
+  gap: 50px;
   flex: 2 1 500px;
   flex-wrap: wrap;
 }
@@ -124,3 +124,13 @@
   font-size: 13px;
   color: #888;
 }
+/* 
+@media (max-width:768px) {
+  .linksSection {
+  display: flex;
+  gap: 10px;
+  flex: 2 1 500px;
+  flex-wrap: wrap;
+}
+  
+} */

@@ -3,7 +3,7 @@ import SwipeSlider from '../components/SwipeSlider';
 import { motion } from "framer-motion";
 import '../assets/css/home.css';
 import PartnersSlider from '../components/PartnersSlider';
-import HeroSection from '../components/HeroSection'; 
+import HeroSection from '../components/HeroSection';
 import FiberOpticCabel1 from '../assets/pic/homepic/fiber-optic-cables.jpg'
 import FiberOpticCabel2 from '../assets/pic/homepic/Optical-fiber.webp'
 import FiberOpticCabel3 from '../assets/pic/homepic/fiber-cabel.avif'
@@ -15,29 +15,30 @@ const Home = () => {
     const projects = [
         {
             id: 1,
-            title: "Efficient Procurement Strategies",
-            description: "We develop cost-effective procurement solutions tailored to your industry needs, ensuring timely and reliable supply delivery.",
+            title: "İnfrastruktur üçün Ağıllı Satınalma",
+            description: "Kabel və avadanlıq təchizatı üçün effektiv və sürətli həllər təqdim edirik — yüksək performans və dayanıqlı çatdırılma zəmanəti ilə.",
             imageUrl: FiberOpticCabel1,
         },
         {
             id: 2,
-            title: "Vendor Network Expansion",
-            description: "Our team helps build robust supplier networks across global markets, improving sourcing flexibility and risk management.",
-            imageUrl:FiberOpticCabel2,
+            title: "Qlobal Təchizatçı Şəbəkələri",
+            description: "Rəqəmsal texnologiyalar vasitəsilə təchizatçı bağlantılarını genişləndirir və etibarlı tərəfdaşlıq platformaları qururuq.",
+            imageUrl: FiberOpticCabel2,
         },
         {
             id: 3,
-            title: "Sustainable Procurement Solutions",
-            description: "We implement eco-conscious procurement practices that align with ESG goals while maintaining efficiency and quality.",
+            title: "Ekoloji Davamlı Satınalma",
+            description: "ESG standartlarına uyğun şəkildə resurs istifadəsini minimuma endirən, eyni zamanda keyfiyyəti qoruyan satınalma modelləri tətbiq edirik.",
             imageUrl: FiberOpticCabel3,
         },
         {
             id: 4,
-            title: "Digital Supply Chain Management",
-            description: "We digitize your procurement workflows to improve visibility, automation, and decision-making across your supply chain.",
+            title: "Rəqəmsal Təchizat Zənciri İdarəetməsi",
+            description: "Satınalma proseslərinizi avtomatlaşdırır, izlənəbilən və çevik bir təchizat zənciri ilə qərarverməni optimallaşdırırıq.",
             imageUrl: FiberOpticCabel4,
         },
     ];
+
 
     return (
         <div>
