@@ -1,9 +1,10 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader';
 import '../assets/css/references.css';
-import { FaHandshake } from 'react-icons/fa';
+import { FaHandshake } from 'react-icons/fa'; 
+import { useTranslation } from 'react-i18next';
 
-// Logo importları
+
 import agrarco from '../assets/pic/references/agrarco_logo.jpg';
 import archico from '../assets/pic/references/ArchiCO-Project-services-logo.webp';
 import asinshaat from '../assets/pic/references/asinsaat_logo.svg';
@@ -33,52 +34,50 @@ import texno from '../assets/pic/references/texno_logo.png';
 import tork from '../assets/pic/references/tork_logo.png';
 
 const referenceData = [
-  { id: 1, name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: idda },
-  { id: 2, name: 'İnnovasiyalar Mərkəzi', logo: icenter },
-  { id: 3, name: 'Əmanətlərin Sığortalanması Fondu', logo: esf },
-  { id: 4, name: 'Aztelekom', logo: aztelekom },
-  { id: 5, name: 'Bakı Metropoliteni QSC', logo: metro },
-  { id: 6, name: 'Naxçıvan MR Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: naxcivan },
-  { id: 7, name: 'SOCAR', logo: socar },
-  { id: 8, name: 'Azərbaycan Respublikası Müdafiə Nazirliyi', logo: mod },
-  { id: 9, name: 'North West Construction LLC', logo: nwc },
-  { id: 10, name: 'Silk Way West Airlines', logo: silkway },
-  { id: 11, name: 'AS İnşaat', logo: asinshaat },
-  { id: 12, name: 'SOCAR Downstream', logo: downstream },
-  { id: 13, name: 'Sumgait Technologies Park STP', logo: stp },
-  { id: 14, name: 'Bakubus LLC', logo: bakubus },
-  { id: 15, name: 'Baku Steel Company QSC', logo: bsc },
-  { id: 16, name: 'Azertexnolayn', logo: texno },
-  { id: 17, name: 'PMD Group', logo: pmd },
-  { id: 18, name: 'Ertok', logo: ertok },
-  { id: 19, name: 'Maqro Construction', logo: maqro },
-  { id: 20, name: 'Tork Çelik', logo: tork },
-  { id: 21, name: 'Cengiz İnşaat', logo: cengiz },
-  { id: 22, name: 'Kalyon', logo: kalyon },
-  { id: 23, name: 'UniKo QSC', logo: uniko },
-  { id: 24, name: 'Tekiz İnşaat', logo: tekiz },
-  { id: 25, name: 'Agrarco', logo: agrarco },
-  { id: 26, name: 'Archico', logo: archico },
-  { id: 27, name: 'İri Şəhərlərin Birləşmiş Su Təchizatı Xidməti', logo: isbsu }
+  { id: 1, name: 'idda', logo: idda },
+  { id: 2, name: 'icenter', logo: icenter },
+  { id: 3, name: 'esf', logo: esf },
+  { id: 4, name: 'aztelekom', logo: aztelekom },
+  { id: 5, name: 'metro', logo: metro },
+  { id: 6, name: 'naxcivan', logo: naxcivan },
+  { id: 7, name: 'socar', logo: socar },
+  { id: 8, name: 'mod', logo: mod },
+  { id: 9, name: 'nwc', logo: nwc },
+  { id: 10, name: 'silkway', logo: silkway },
+  { id: 11, name: 'asinshaat', logo: asinshaat },
+  { id: 12, name: 'downstream', logo: downstream },
+  { id: 13, name: 'stp', logo: stp },
+  { id: 14, name: 'bakubus', logo: bakubus },
+  { id: 15, name: 'bsc', logo: bsc },
+  { id: 16, name: 'texno', logo: texno },
+  { id: 17, name: 'pmd', logo: pmd },
+  { id: 18, name: 'ertok', logo: ertok },
+  { id: 19, name: 'maqro', logo: maqro },
+  { id: 20, name: 'tork', logo: tork },
+  { id: 21, name: 'cengiz', logo: cengiz },
+  { id: 22, name: 'kalyon', logo: kalyon },
+  { id: 23, name: 'uniko', logo: uniko },
+  { id: 24, name: 'tekiz', logo: tekiz },
+  { id: 25, name: 'agrarco', logo: agrarco },
+  { id: 26, name: 'archico', logo: archico },
+  { id: 27, name: 'isbsu', logo: isbsu }
 ];
 
 const References = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <PageHeader
-        title="Referanslarımız"
-        backgroundImage="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2070"
-      />
-
+      <PageHeader title={t('header.menu4')} />
       <section className="reference-grid-section">
         <div className="reference-grid">
           {referenceData.map((ref) => (
             <div className="reference-card" key={ref.id}>
               <div className="reference-logo">
-                <img src={ref.logo} alt={ref.name} />
+                <img src={ref.logo} alt={t(`references.companies.${ref.name}`)} />
               </div>
               <div className="reference-info">
-                <h3><FaHandshake /> {ref.name}</h3>
+                <h3><FaHandshake /> {t(`references.companies.${ref.name}`)}</h3>
               </div>
             </div>
           ))}

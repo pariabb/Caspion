@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import "swiper/css";
+import { useTranslation } from "react-i18next";
 
 import partner1 from "../assets/pic/partners/Babcock_&_Wilcox_logo.png";
 import partner2 from "../assets/pic/partners/bvb_logo.webp";
@@ -44,13 +45,16 @@ import partner33 from "../assets/pic/partners/iport_logo.png";
 
 
 const PartnersSlider = () => {
+
+  const { t } = useTranslation();
+
   const partners = [partner1, partner2, partner3, partner4, partner5, partner6, partner7, partner8, partner9, partner10, partner11, partner12
     , partner13, partner14, partner15, partner16, partner17, partner18, partner19, partner20, partner21, partner22, partner23, partner24, partner25
     , partner26, partner27, partner28, partner29, partner30, partner31, partner32, partner33];
 
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.title}>Bizim Partnyorlarımız</h2>
+      <h2 className={styles.title}>{t('home.section-title4')}</h2>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={3}
@@ -80,7 +84,7 @@ const PartnersSlider = () => {
 
       </Swiper>
       <Link to='/partners'>
-        <button className="btn">Learn More</button>
+        <button className="btn">{t('home.buttonText1')}</button>
       </Link>
     </div>
   );

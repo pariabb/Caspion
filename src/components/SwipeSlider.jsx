@@ -7,33 +7,37 @@ import { useNavigate } from 'react-router-dom';
 import SwiperImg1 from '../assets/pic/homepic/swipeimg1.avif'
 import SwiperImg2 from '../assets/pic/homepic/swipeimg2.avif'
 import SwiperImg3 from '../assets/pic/homepic/swipeimg3.avif'
+import { useTranslation } from 'react-i18next';
 
 
 
 const SwipeSlider = () => {
+
+  const { t } = useTranslation();
+
   const navigate = useNavigate();
 
   const slides = [
     {
       image: SwiperImg1,
-      title: "Yüksək Texnologiyalı Təchizat",
-      subtitle: "İnnovativ həllərlə təchizat zəncirinizi rəqəmsallaşdırın və xərcləri azaldın.",
-      buttonText: "Ətraflı Bax",
-      path: '/about'
+      title: t("home.title1"),
+      subtitle: t("home.subtitle1"),
+      buttonText: t("home.buttonText1"),
+      path: "/about",
     },
     {
-      image: SwiperImg2 ,
-      title: "Etibarlı Beynəlxalq Tərəfdaşlıq",
-      subtitle: "Sizi dünya üzrə sınaqdan keçmiş təchizatçılarla birləşdiririk — keyfiyyət və şəffaflıq ön plandadır.",
-      buttonText: "Referanslarımız",
-      path: '/references'
+      image: SwiperImg2,
+      title: t("home.title2"),
+      subtitle: t("home.subtitle2"),
+      buttonText: t("home.buttonText2"),
+      path: "/references",
     },
     {
       image: SwiperImg3,
-      title: "Tam Əhatəli Satınalma Xidməti",
-      subtitle: "Analizdən çatdırılmaya qədər — bütün mərhələləri biz idarə edirik, siz isə öz işinizə fokuslanırsınız.",
-      buttonText: "Bizimlə Əlaqə",
-      path: '/contact'
+      title: t("home.title3"),
+      subtitle: t("home.subtitle3"),
+      buttonText: t("home.buttonText3"),
+      path: "/contact",
     }
   ];
   return (

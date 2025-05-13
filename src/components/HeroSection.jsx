@@ -6,6 +6,7 @@ import HeroImg1 from "../assets/pic/homepic/heroimg1.avif";
 import HeroImg2 from "../assets/pic/homepic/heroimg2.avif";
 import HeroImg3 from "../assets/pic/homepic/heroimg3.avif";
 import HeroImg4 from "../assets/pic/homepic/heroimg4.avif";
+import { useTranslation } from "react-i18next";
 
 
 
@@ -31,6 +32,9 @@ const floatIn = (x = 0, y = 0) => ({
 
 
 const HeroSection = () => {
+
+  const { t } = useTranslation();
+
   return (
     <section className={styles.heroSection}>
       <div className={styles.overlay}></div>
@@ -43,11 +47,11 @@ const HeroSection = () => {
           viewport={{ once: false, amount: 0.4 }}
         >
           <motion.h1 className={styles.heroTitle} variants={fadeUp}>
-            Trusted Solutions for Telecom and Industrial Procurement
+            {t('home.heroh1')}
           </motion.h1>
 
           <motion.p className={styles.heroDescription} variants={fadeUp}>
-            Delivering certified equipment, expert service, and tailored procurement for infrastructure, energy, and communication sectors.
+            {t('home.herop')}
           </motion.p>
 
 
@@ -58,7 +62,7 @@ const HeroSection = () => {
                 className={styles.primaryButton}
                 whileHover={{ scale: 1.08 }}
               >
-                Get Started
+                {t('home.buttonText4')}
               </motion.button></Link>
 
             <Link to='/about'>
@@ -66,7 +70,8 @@ const HeroSection = () => {
                 className={styles.secondaryButton}
                 whileHover={{ scale: 1.08 }}
               >
-                Learn More
+                {t('home.buttonText1')}
+
               </motion.button>
             </Link>
           </motion.div>

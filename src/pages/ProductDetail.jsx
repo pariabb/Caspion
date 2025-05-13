@@ -3,11 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import products from '../data/products.json';
 import PageHeader from '../components/PageHeader';
 import './ProductDetail.css';
+import { useTranslation } from 'react-i18next';
 
 const ProductDetail = () => {
     const { id } = useParams();
     const product = products.find((p) => p.id === id);
     const [showScroll, setShowScroll] = useState(false);
+
+    const { t } = useTranslation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -38,17 +41,16 @@ const ProductDetail = () => {
 
         <div>
             <PageHeader
-                title={product.title}
-                breadcrumb={breadcrumb}
-                backgroundImage="https://images.unsplash.com/photo-1606814540563-5c02d62fd409?q=80&w=2112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                title={t(`products.${id}.title`)} breadcrumb={breadcrumb}
+            />
 
             <div className="product-detail-content fade-in">
                 <div className="product-image">
                     <img src={product.image} alt={product.title} />
                 </div>
                 <div className="product-info">
-                    <p>{product.description}</p>
-                    <Link to="/products" className="back-button">← Back to Products</Link>
+                    <p>{t(`products.${id}.description`)}</p>
+                    <Link to="/products" className="back-button">← {t("products.buttonText7")}</Link>
                 </div>
             </div>
 

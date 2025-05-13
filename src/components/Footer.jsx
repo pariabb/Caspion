@@ -3,6 +3,8 @@ import styles from "./Footer.module.css";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import Logo from '../assets/pic/Caspion-logo.png';
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom"; 
 
 const footerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -13,8 +15,11 @@ const listItemHover = {
   whileHover: { x: 10, scale: 1.05 },
   transition: { type: "spring", stiffness: 100 },
 };
-
+  
 const Footer = () => {
+  const { t } = useTranslation();
+  const year = new Date().getFullYear();
+
   return (
     <motion.footer
       className={styles.footer}
@@ -26,43 +31,44 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.logoSection}>
           <img className="logo mb-4" src={Logo} alt="Logo" style={{ height: '70px' }} />
-          {/* <p className={styles.description}>
-            Smart procurement solutions for modern businesses.
-          </p> */}
         </div>
 
         <div className={styles.linksSection}>
           <div>
-            <h4>Company</h4>
+            <h4>{t("footer.company.title")}</h4>
             <ul>
-              {['About Us', 'References', 'Partners', 'Our Missions'].map((item, idx) => (
-                <motion.li key={idx} {...listItemHover}>{item}</motion.li>
-              ))}
+              <motion.li {...listItemHover}><Link to="/about">{t("footer.company.about")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/references">{t("footer.company.references")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/partners">{t("footer.company.partners")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/about">{t("footer.company.mission")}</Link></motion.li>
             </ul>
           </div>
+
           <div>
-            <h4>Services</h4>
+            <h4>{t("footer.services.title")}</h4>
             <ul>
-              {['Procurement Solutions','For Suppliers', 'For Enterprises', 'Pricing'].map((item, idx) => (
-                <motion.li key={idx} {...listItemHover}>{item}</motion.li>
-              ))}
+              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.procurement")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.suppliers")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.enterprises")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.pricing")}</Link></motion.li>
             </ul>
           </div>
+
           <div>
-            <h4>Contact </h4>
+            <h4>{t("footer.contact.title")}</h4>
             <ul>
-              {['Help Center', 'Contact Us', 'Privacy Policy'].map((item, idx) => (
-                <motion.li key={idx} {...listItemHover}>{item}</motion.li>
-              ))}
+              <motion.li {...listItemHover}><Link to="/contact">{t("footer.contact.help")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/contact">{t("footer.contact.contactUs")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/contact">{t("footer.contact.privacy")}</Link></motion.li>
             </ul>
           </div>
         </div>
 
         <div className={styles.subscribeSection}>
-          <h4>Subscribe to updates</h4>
+          <h4>{t("footer.subscribe.title")}</h4>
           <form>
-            <input type="email" placeholder="Your email" />
-            <button type="submit" className="mt-2">Subscribe</button>
+            <input type="email" placeholder={t("footer.subscribe.placeholder")} />
+            <button type="submit" className="mt-2">{t("footer.subscribe.button")}</button>
           </form>
 
           <div className={styles.socials}>
@@ -83,7 +89,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.bottomBar}>
-        <p>© {new Date().getFullYear()} Caspion. All rights reserved.</p>
+        <p>{t("footer.copyright", { year })}</p>
       </div>
     </motion.footer>
   );

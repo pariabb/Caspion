@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import '../assets/css/references_swiper.css';
+import { useTranslation } from 'react-i18next';
 
 import agrarco from '../assets/pic/references/agrarco_logo.jpg';
 import archico from '../assets/pic/references/ArchiCO-Project-services-logo.webp';
@@ -41,10 +42,14 @@ const logos = [
     archico, asinshaat, isbsu
 ];
 
+
 const ReferencesSwiper = () => {
+
+    const { t } = useTranslation();
+    
     return (
         <section className="references-swiper-section">
-            <h2 className="section-title">Müştərilərimiz</h2>
+            <h2 className="section-title">{t("home.section-title1")}</h2>
             <Swiper
                 modules={[Autoplay, Pagination, EffectCoverflow]}
                 effect="coverflow"

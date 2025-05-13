@@ -9,32 +9,36 @@ import FiberOpticCabel2 from '../assets/pic/homepic/Optical-fiber.webp'
 import FiberOpticCabel3 from '../assets/pic/homepic/fiber-cabel.avif'
 import FiberOpticCabel4 from '../assets/pic/homepic/giphy.gif'
 import ReferencesSwiper from '../components/ReferencesSwiper';
+import { useTranslation } from 'react-i18next';
 
 
 const Home = () => {
+    
+    const { t } = useTranslation();
+    
     const projects = [
         {
             id: 1,
-            title: "İnfrastruktur üçün Ağıllı Satınalma",
-            description: "Kabel və avadanlıq təchizatı üçün effektiv və sürətli həllər təqdim edirik — yüksək performans və dayanıqlı çatdırılma zəmanəti ilə.",
+            title: t("home.htitle1"),
+            description: t("home.desc1"),
             imageUrl: FiberOpticCabel1,
         },
         {
             id: 2,
-            title: "Qlobal Təchizatçı Şəbəkələri",
-            description: "Rəqəmsal texnologiyalar vasitəsilə təchizatçı bağlantılarını genişləndirir və etibarlı tərəfdaşlıq platformaları qururuq.",
+            title: t("home.htitle2"),
+            description: t("home.desc2"),
             imageUrl: FiberOpticCabel2,
         },
         {
             id: 3,
-            title: "Ekoloji Davamlı Satınalma",
-            description: "ESG standartlarına uyğun şəkildə resurs istifadəsini minimuma endirən, eyni zamanda keyfiyyəti qoruyan satınalma modelləri tətbiq edirik.",
+            title: t("home.htitle3"),
+            description: t("home.desc3"),
             imageUrl: FiberOpticCabel3,
         },
         {
             id: 4,
-            title: "Rəqəmsal Təchizat Zənciri İdarəetməsi",
-            description: "Satınalma proseslərinizi avtomatlaşdırır, izlənəbilən və çevik bir təchizat zənciri ilə qərarverməni optimallaşdırırıq.",
+            title: t("home.htitle4"),
+            description: t("home.desc4"),
             imageUrl: FiberOpticCabel4,
         },
     ];
@@ -47,7 +51,7 @@ const Home = () => {
             <ReferencesSwiper />
 
             <div className="construction-advanced-section">
-                <h1 className='text-center'>Fiber-optic Products</h1>
+                <h1 className='text-center'>{t("home.section-title2")}</h1>
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.id}

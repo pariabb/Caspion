@@ -3,6 +3,8 @@ import PageHeader from "../components/PageHeader";
 import styles from "./Partners.module.css";
 import { Link } from "react-router-dom";
 
+import { useTransition } from "react";
+
 import partner1 from "../assets/pic/partners/Babcock_&_Wilcox_logo.png";
 import partner2 from "../assets/pic/partners/bvb_logo.webp";
 import partner3 from "../assets/pic/partners/CHINT_logo.png";
@@ -36,28 +38,30 @@ import partner30 from "../assets/pic/partners/vindustries_logo.png";
 import partner31 from "../assets/pic/partners/Yokogawa_Logo.webp";
 import partner32 from "../assets/pic/partners/kabelni_alyans_logo.png";
 import partner33 from "../assets/pic/partners/iport_logo.png";
+import { useTranslation } from "react-i18next";
 
 const partners = [
   partner1, partner2, partner3, partner4, partner5, partner6, partner7,
   partner8, partner9, partner10, partner11, partner12, partner13,
   partner14, partner15, partner16, partner17, partner18, partner19,
   partner20, partner21, partner22, partner23, partner24, partner25,
-  partner26, partner27, partner28, partner29, partner30, partner31,partner32,partner33
+  partner26, partner27, partner28, partner29, partner30, partner31, partner32, partner33
 ];
 
 const Partners = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div>
       <PageHeader
-        title="Partnyorlar"
-        backgroundImage={
-          "https://images.unsplash.com/photo-1645651964715-d200ce0939cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3"
-        }
+        title={t('header.menu5')}
+
       />
       <div className={styles.container}>
-        <h2 className={styles.heading}>Bizim Partnyorlarımız</h2>
+        <h2 className={styles.heading}>{t('partners.title')}</h2>
         <p className={styles.description}>
-          Əməkdaşlıq etdiyimiz partnyorlar innovasiya və keyfiyyət sahəsində öncüllərdir. Aşağıda sizə bir qismini təqdim edirik.
+          {t('partners.subtitle')}
         </p>
         <div className={styles.grid}>
           {partners.map((logo, idx) => (
@@ -73,10 +77,10 @@ const Partners = () => {
           ))}
         </div>
         <div className={styles.cta}>
-          <h3>Bizimlə əməkdaşlıq etmək istəyirsiniz?</h3>
-          <p>Yeni partnyorlarla işləməyə açığıq. Əlaqə saxlamaqdan çəkinməyin!</p>
+          <h3>{t('partners.question')}</h3>
+          <p>{t('partners.p')}</p>
           <Link to="/contact" className={styles.ctaButton}>
-            Bizimlə əlaqə
+            {t('home.buttonText3')}
           </Link>
         </div>
       </div>

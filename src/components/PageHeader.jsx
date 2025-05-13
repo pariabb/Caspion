@@ -2,9 +2,12 @@ import React from "react";
 import styles from "./PageHeader.module.css";
 import { Link } from "react-router-dom";
 import PageHeaderImg from '/products/submarine.jpg'
+import { useTranslation } from "react-i18next";
 
 const PageHeader = ({ title, breadcrumb }) => {
-  const backgroundImage = PageHeaderImg; 
+  const backgroundImage = PageHeaderImg;
+
+  const { t } = useTranslation();
 
   return (
     <div
@@ -20,7 +23,7 @@ const PageHeader = ({ title, breadcrumb }) => {
           ) : (
             <>
               <Link to="/" className={styles.homeLink}>
-                Home
+                 { t('header.menu1')}
               </Link>{" "}
               / {title}
             </>

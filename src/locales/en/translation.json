@@ -1,0 +1,191 @@
+{
+    "header": {
+        "menu1": "Home",
+        "menu2": "About Us",
+        "menu3": "Our Products",
+        "menu4": "References",
+        "menu5": "Partners",
+        "menu6": "Contact Us"
+    },
+    "home": {
+        "title1": "High-Tech Procurement",
+        "title2": "Trusted International Partnership",
+        "title3": "Comprehensive Purchasing Service",
+        "subtitle1": "Digitize your supply chain with innovative solutions and reduce costs.",
+        "subtitle2": "We connect you with tested suppliers worldwide — quality and transparency come first.",
+        "subtitle3": "From analysis to delivery — we manage all stages, so you can focus on your core business.",
+        "buttonText1": "Learn More",
+        "buttonText2": "Our References",
+        "buttonText3": "Contact Us",
+        "section-title1": "Our Clients",
+        "section-title2": "Fiber-Optic Products",
+        "htitle1": "Smart Procurement for Infrastructure",
+        "htitle2": "Global Supplier Networks",
+        "htitle3": "Environmentally Sustainable Procurement",
+        "htitle4": "Digital Supply Chain Management",
+        "desc1": "We offer efficient and fast solutions for cable and equipment supply — with guaranteed high performance and reliable delivery.",
+        "desc2": "We expand supplier connections through digital technologies and build reliable partnership platforms.",
+        "desc3": "We implement procurement models that minimize resource usage in line with ESG standards while maintaining quality.",
+        "desc4": "We automate your procurement processes and optimize decision-making with a traceable and agile supply chain.",
+        "heroh1": "Trusted Solutions for Telecom and Industrial Procurement",
+        "herop": "Delivering certified equipment, expert service, and tailored procurement for infrastructure, energy, and communication sectors.",
+        "buttonText4": "Get Started",
+        "section-title4": "Our Partners"
+    },
+    "about": {
+        "title": "Caspion Construction and Procurement LLC",
+        "p1": "Since 2021, Caspion Construction and Procurement LLC has been one of the leading companies in Azerbaijan's sales market. By embracing this leadership, we aim to pioneer innovation in this field within our country.",
+        "p2": "Our company specializes in the sale of fiber-optic products, GPON equipment and accessories, telecommunications equipment and products, fiber-optic and submarine communication cables, electrical cables, and related accessories. Additionally, our product range includes metal and polyethylene pipes, clamps and related products, trailers and semi-trailers, control and measuring devices and equipment, spare parts, chemicals, and solutions. We also provide sales of industrial and energy sector equipment such as bearings, valves and control systems, pumps and compressors, metal cable trays, brackets, and their components.",
+        "p3": "First of all, it should be noted that our company has extensive experience in corporate supply of the above-mentioned and other products, which allows us to strengthen our clients' positions in the market economy and provide a competitive advantage. The attention and special approach we show to our work, partners, and clients are among the key factors that make us successful and distinguish us in our field. It is well known that the ever-evolving global and local sales markets demand new approaches and solutions. Guided by these requirements and based on our years of experience in sales, we continue to serve our customers. The wide range of equipment and products sold by Caspion Construction and Procurement LLC fully meets the needs and expectations of our business partners in terms of quality and performance. Furthermore, the products we offer are sourced directly from the manufacturer and delivered to clients after undergoing special technical inspections. Therefore, we fully guarantee the quality of the products we sell.",
+        "p4": "Our company's core principles in client relationships are personalized approach, thorough analysis, and achieving maximum success in every project. Our serious and responsible attitude towards our work has earned us great respect in the industry. You can get acquainted with the partners we have gained thanks to our experience and professionalism in the 'Partners' section of our website.",
+        "buttonText5": "Hide",
+        "buttonText6": "Read More",
+        "subtitle1": "Our Mission",
+        "subtitle1p1": "To become the most trusted and convenient service provider for our clients...",
+        "subtitle1p2": "Thanks to our extensive capabilities, we aim to become the most reliable and convenient service provider for our clients. At the same time, one of our main missions is to contribute to the optimization of the sales process and the creation of new opportunities in this field in our country. We are also determined to expand our operations by continuously introducing innovations in the ever-changing and developing sales market.",
+        "subtitle2": "Our Objective",
+        "subtitle2p1": "To provide clients with quality products without resorting to artificial price increases...",
+        "subtitle2p2": "Our goal is to respect the purchasing power of our clients by offering them the best prices, affordable services, and the highest quality products without engaging in artificial price inflation.",
+        "subtitle3": "Our Target",
+        "subtitle3p1": "To deliver quality products with fast service...",
+        "subtitle3p2": "Our target is to provide clients with optimal, original, and high-quality products along with fast delivery services. We also aim to ensure that clients obtain products under the most favorable conditions, offering them maximum quality and variety at minimal prices. As Caspion Construction and Procurement, we are ready to meet all your needs and expectations. Contact us, and our experienced team will help you find the right solutions!",
+        "p5": "At Caspion, we are ready to meet all your needs and requirements. Contact us, and together we will find the most suitable solutions for you and achieve success in your projects."
+    },
+    "products": {
+        "fiber-optic-products": {
+            "title": "Fiber-optic products",
+            "description": "Fiber-optic products enable high-speed data transmission using light through optical fibers. They are widely used in modern telecommunications for reliable and fast connectivity."
+        },
+        "gpon-equipment": {
+            "title": "GPON equipment and accessories",
+            "description": "GPON (Gigabit Passive Optical Network) equipment includes OLTs, ONTs, splitters, and connectors used to deliver gigabit-speed internet over fiber networks."
+        },
+        "telecom-equipment": {
+            "title": "Telecommunications equipment and products",
+            "description": "This includes all devices and infrastructure used to transmit data over long distances, such as routers, switches, modems, antennas, and signal boosters."
+        },
+        "fiber-optic-cables": {
+            "title": "Fiber-optic cables",
+            "description": "These cables are made of glass or plastic fibers that transmit data as pulses of light, offering high bandwidth and low attenuation over long distances."
+        },
+        "submarine-cables": {
+            "title": "Submarine communication and power cables",
+            "description": "Submarine cables are laid on the seabed between land-based stations to carry telecommunication and power signals across continents and oceans."
+        },
+        "electrical-cables": {
+            "title": "Electrical cables and accessories",
+            "description": "Electrical cables carry electric power, and accessories like connectors, joints, and terminals ensure safe and efficient connections."
+        },
+        "pipes-clamps": {
+            "title": "Metal and polyethylene pipes, clamps, related products",
+            "description": "Used in infrastructure and construction, these include corrosion-resistant pipes and fastening clamps for water, gas, or fiber systems."
+        },
+        "trailers": {
+            "title": "Trailers and semi-trailers",
+            "description": "Vehicles designed to transport goods efficiently, trailers and semi-trailers are essential in logistics and supply chains."
+        },
+        "control-devices": {
+            "title": "Control and measurement devices, equipment, accessories, spare parts",
+            "description": "These devices monitor and control industrial and laboratory processes, ensuring precision, safety, and consistency."
+        },
+        "chemicals": {
+            "title": "Chemicals and solutions",
+            "description": "Industrial and lab-grade chemicals used in manufacturing, cleaning, processing, and scientific experiments."
+        },
+        "bearings": {
+            "title": "Bearings",
+            "description": "Mechanical components that reduce friction between moving parts and support rotational or linear motion."
+        },
+        "valves-controls": {
+            "title": "Valves & controls",
+            "description": "Devices used to control the flow and pressure of liquids or gases in a system. Common in pipelines and mechanical setups."
+        },
+        "pumps-compressors": {
+            "title": "Pumps, compressors",
+            "description": "Pumps move liquids, while compressors increase the pressure of gases. Both are essential in industrial systems."
+        },
+        "cable-trays": {
+            "title": "Metal cable trays, brackets, and their parts",
+            "description": "Support structures that hold and organize cables in electrical and communication systems."
+        },
+        "buttonText7": "Back to Products"
+    },
+    "partners": {
+        "title": "Our Partners",
+        "subtitle": "The partners we collaborate with are leaders in innovation and quality. Below, we present a few of them.",
+        "question": "Interested in partnering with us?",
+        "p": "We are open to working with new partners. Don’t hesitate to get in touch!"
+    },
+    "contact": {
+        "pageTitle": "Contact Us",
+        "workingHoursTitle": "Working Hours",
+        "workingHours": "Mon - Fri: 09:00 - 18:00",
+        "phoneTitle": "Phone Number",
+        "addressTitle": "Address",
+        "address": "Baku, Khatai district, Babak avenue, Aladdin Guliyev 1131, Babak Plaza B7-02",
+        "emailTitle": "Email",
+        "form": {
+            "name": "Your Name",
+            "surname": "Your Surname",
+            "email": "Your Email Address",
+            "phone": "Your Phone Number",
+            "company": "Company (if any)",
+            "subject": "Subject",
+            "message": "Your Message",
+            "submit": "Send",
+            "phoneError": "Only numbers are allowed"
+        }
+    },
+    "footer": {
+        "company.title": "Company",
+        "company.about": "About Us",
+        "company.references": "References",
+        "company.partners": "Partners",
+        "company.mission": "Our Mission",
+        "services.title": "Services",
+        "services.procurement": "Procurement Solutions",
+        "services.suppliers": "For Suppliers",
+        "services.enterprises": "For Enterprises",
+        "services.pricing": "Pricing",
+        "contact.title": "Contact",
+        "contact.help": "Help Center",
+        "contact.contactUs": "Contact Us",
+        "contact.privacy": "Privacy Policy",
+        "subscribe.title": "Subscribe to updates",
+        "subscribe.placeholder": "Your email",
+        "subscribe.button": "Subscribe",
+        "copyright": "© {{year}} Caspion. All rights reserved."
+    },
+    "references": {
+        "title": "References",
+        "companies": {
+            "idda": "Innovation and Digital Development Agency",
+            "icenter": "Innovation Center",
+            "esf": "Deposit Insurance Fund",
+            "aztelekom": "Aztelekom",
+            "metro": "Baku Metro JSC",
+            "naxcivan": "Nakhchivan Digital Development and Transport Ministry",
+            "socar": "SOCAR",
+            "mod": "Ministry of Defence of the Republic of Azerbaijan",
+            "nwc": "North West Construction LLC",
+            "silkway": "Silk Way West Airlines",
+            "asinshaat": "AS Construction",
+            "downstream": "SOCAR Downstream",
+            "stp": "Sumgait Technologies Park (STP)",
+            "bakubus": "Bakubus LLC",
+            "bsc": "Baku Steel Company JSC",
+            "texno": "Azertexnolayn",
+            "pmd": "PMD Group",
+            "ertok": "Ertok",
+            "maqro": "Maqro Construction",
+            "tork": "Tork Steel",
+            "cengiz": "Cengiz Construction",
+            "kalyon": "Kalyon",
+            "uniko": "UniKo JSC",
+            "tekiz": "Tekiz Construction",
+            "agrarco": "Agrarco",
+            "archico": "Archico Project Services",
+            "isbsu": "United Water Supply Service for Large Cities"
+        }
+    }
+}

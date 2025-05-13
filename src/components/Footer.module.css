@@ -3,6 +3,7 @@
   color: #ffffff;
   padding: 60px 20px 20px;
   font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -47,16 +48,17 @@
   padding: 0;
 }
 
-.linksSection li {
-  font-size: 16px;
-  margin-bottom: 6px;
-  cursor: pointer;
+.linksSection li a {
+  text-decoration: none; 
+  color: #ffffff;        
+  margin: 8px 0;
+  display: inline-block;
   transition: color 0.3s ease;
 }
-
-/* .linksSection li:hover {
-    color: #00c896;
-  } */
+ .linksSection li a:hover
+{
+  color: #F4B416;
+}
 
 .subscribeSection {
   flex: 1 1 250px;
