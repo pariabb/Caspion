@@ -43,7 +43,7 @@ const Footer = () => {
             <h4>{t("footer.company.title")}</h4>
             <ul>
               <motion.li {...listItemHover}><Link to="/about">{t("footer.company.about")}</Link></motion.li>
-              <motion.li {...listItemHover}><Link to="/references">{t("footer.company.references")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/clients">{t("footer.company.references")}</Link></motion.li>
               <motion.li {...listItemHover}><Link to="/partners">{t("footer.company.partners")}</Link></motion.li>
               <motion.li {...listItemHover}><Link to="/about">{t("footer.company.mission")}</Link></motion.li>
             </ul>
