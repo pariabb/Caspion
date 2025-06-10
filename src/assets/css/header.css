@@ -19,6 +19,8 @@
   animation: slideDown 0.3s ease-in-out;
 }
 
+
+
 .navbar-brand p {
   font-size: 15px !important;
   color: #1F7088;
@@ -37,8 +39,9 @@
 }
 
 .main-header.shrink .logo {
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 60px;
+  margin-top: 5px;
 }
 
 .nav-link {
@@ -120,6 +123,22 @@
     display: none;
   }
 
+  .navbar-brand p {
+    font-size: 12px !important;
+    color: #1F7088;
+    margin-top: 9px !important;
+
+  }
+
+  .navbar-brand p span {
+    font-size: 15px;
+    color: #1F7088;
+  }
+
+  .main-header.shrink p {
+    margin-top: 5px !important;
+  }
+
   .main-header.shrink {
     padding: 8px 0;
   }
@@ -146,6 +165,7 @@
     width: 65px;
     height: 65px;
     transition: height 0.3s ease;
+    margin: 0 !important;
   }
 }
 
@@ -157,7 +177,20 @@
 
   .custom-toggler {
     font-size: 30px;
-   
+
   }
-  
+
+}
+@media screen and (min-width: 1100px) and (max-width: 1280px){
+
+ .navbar-brand p {
+    display: block !important;
+  }
+
+
+  .custom-toggler {
+    font-size: 30px;
+
+  }
+
 }

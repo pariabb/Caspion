@@ -53,7 +53,7 @@ const Header = () => {
 
           <NavLink className="navbar-brand fw-bold d-flex" to="/">
             <img className="logo" src={Logo} alt="Logo" />
-            <p className='ms-2 mt-1 text-center d-lg-block d-md-none d-sm-none'> <span>Caspion</span> <br /> Construction & Procurement</p>
+            <p className='ms-2 mt-1 text-center d-lg-block d-md-block d-sm-none'> <span>Caspion</span> <br /> Construction & Procurement</p>
           </NavLink>
 
           <div className="lang-button d-lg-none d-md-block d-sm-block mx-auto">
