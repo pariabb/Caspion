@@ -6,6 +6,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import '../assets/css/references_swiper.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
+
 
 import agrarco from '../assets/pic/references/agrarco_logo.jpg';
 import archico from '../assets/pic/references/ArchiCO-Project-services-logo.webp';
@@ -46,7 +49,7 @@ const logos = [
 const ReferencesSwiper = () => {
 
     const { t } = useTranslation();
-    
+
     return (
         <section className="references-swiper-section">
             <h2 className="section-title">{t("home.section-title1")}</h2>
@@ -74,6 +77,11 @@ const ReferencesSwiper = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <Link to='/references'>
+                <button
+                    className="swiper-button"
+                >{t('home.buttonText1')}</button>
+            </Link>
         </section>
     );
 };

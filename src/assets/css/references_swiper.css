@@ -1,5 +1,5 @@
 .references-swiper-section {
-  padding: 60px 5px; 
+  padding: 60px 5px;
   background: #f5f8ff;
   text-align: center;
 }
@@ -13,7 +13,7 @@
 .references-swiper {
   width: 100%;
   max-width: 100%;
-  padding: 10px 10px 50px 10px; 
+  padding: 10px 10px 50px 10px;
 }
 
 .logo-slide {
@@ -37,6 +37,10 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.swiper-button:hover {
+  scale: calc(1.05);
 }
 
 @media (max-width: 768px) {

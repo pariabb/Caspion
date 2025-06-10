@@ -48,7 +48,7 @@ const ProductDetail = () => {
                 <div className="product-image">
                     <img src={product.image} alt={product.title} />
                 </div>
-                <div className="product-info">
+                <div className="product-info  justify-center">
                     <p>{t(`products.${id}.description`)}</p>
                     <Link to="/products" className="back-button">← {t("products.buttonText7")}</Link>
                 </div>

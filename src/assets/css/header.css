@@ -1,14 +1,15 @@
 .main-header {
-  background: #fff;
+  background: #eff2fe;
   backdrop-filter: blur(10px);
   transition: all 0.4s ease;
-  padding: 15px 0;
-  z-index: 1050; 
-  position: relative; 
+  padding: 12px 3px;
+  z-index: 1050;
+  position: relative;
 }
 
 .dropdown-menu {
   z-index: 1060 !important;
+  background-color: #fff !important;
 }
 
 
@@ -18,13 +19,26 @@
   animation: slideDown 0.3s ease-in-out;
 }
 
+.navbar-brand p {
+  font-size: 15px !important;
+  color: #1F7088;
+
+}
+
+.navbar-brand p span {
+  font-size: 19px;
+  color: #1F7088;
+}
+
 .logo {
-  height: 60px;
+  width: 70px;
+  height: 70px;
   transition: height 0.3s ease;
 }
 
 .main-header.shrink .logo {
-  height: 45px;
+  height: 55px;
+  width: 55px;
 }
 
 .nav-link {
@@ -90,6 +104,7 @@
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0);
   }
@@ -99,6 +114,10 @@
   .navbar-nav {
     padding-top: 10px;
     text-align: center;
+  }
+
+  .navbar-brand p {
+    display: none;
   }
 
   .main-header.shrink {
@@ -118,7 +137,27 @@
     transform: translateX(-50%);
     top: 20px;
   }
-  .lang-button2{
+
+  .lang-button2 {
     display: none;
   }
+
+  .logo {
+    width: 65px;
+    height: 65px;
+    transition: height 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .navbar-brand p {
+    display: none !important;
+  }
+
+
+  .custom-toggler {
+    font-size: 30px;
+   
+  }
+  
 }

@@ -51,8 +51,9 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container d-flex align-items-center justify-content-between " >
 
-          <NavLink className="navbar-brand fw-bold" to="/">
+          <NavLink className="navbar-brand fw-bold d-flex" to="/">
             <img className="logo" src={Logo} alt="Logo" />
+            <p className='ms-2 mt-1 text-center d-lg-block d-md-none d-sm-none'> <span>Caspion</span> <br /> Construction & Procurement</p>
           </NavLink>
 
           <div className="lang-button d-lg-none d-md-block d-sm-block mx-auto">
@@ -63,30 +64,29 @@ const Header = () => {
                 id="languageDropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                onClick={() => {
+                  if (isMenuOpen) setMenuOpen(false);
+                }}
               >
-                 {i18next.language.toUpperCase()}
+                {i18next.language.toUpperCase()}
               </button>
+
 
               <ul
                 className="dropdown-menu mt-2 dropdown-menu-end"
                 aria-labelledby="languageDropdown"
                 style={{ minWidth: '120px' }}
               >
-                <li>
-                  <button className="dropdown-item" onClick={() => changeLang('az')}>
-                    AZ
-                  </button>
-                </li>
-                <li>
-                  <button className="dropdown-item" onClick={() => changeLang('en')}>
-                    EN
-                  </button>
-                </li>
-                <li>
-                  <button className="dropdown-item" onClick={() => changeLang('ru')}>
-                    RU
-                  </button>
-                </li>
+                <button className="dropdown-item" onClick={() => { changeLang('az'); setMenuOpen(false); }}>
+                  AZ
+                </button>
+                <button className="dropdown-item" onClick={() => { changeLang('en'); setMenuOpen(false); }}>
+                  EN
+                </button>
+                <button className="dropdown-item" onClick={() => { changeLang('ru'); setMenuOpen(false); }}>
+                  RU
+                </button>
+
               </ul>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Header = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-               {i18next.language.toUpperCase()}
+              {i18next.language.toUpperCase()}
             </button>
 
             <ul
@@ -128,21 +128,16 @@ const Header = () => {
               aria-labelledby="languageDropdown"
               style={{ minWidth: '120px' }}
             >
-              <li>
-                <button className="dropdown-item" onClick={() => changeLang('az')}>
-                  AZ
-                </button>
-              </li>
-              <li>
-                <button className="dropdown-item" onClick={() => changeLang('en')}>
-                  EN
-                </button>
-              </li>
-              <li>
-                <button className="dropdown-item" onClick={() => changeLang('ru')}>
-                  RU
-                </button>
-              </li>
+              <button className="dropdown-item" onClick={() => { changeLang('az'); setMenuOpen(false); }}>
+                AZ
+              </button>
+              <button className="dropdown-item" onClick={() => { changeLang('en'); setMenuOpen(false); }}>
+                EN
+              </button>
+              <button className="dropdown-item" onClick={() => { changeLang('ru'); setMenuOpen(false); }}>
+                RU
+              </button>
+
             </ul>
           </div>
 
