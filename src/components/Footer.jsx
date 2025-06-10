@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import Logo from '../assets/pic/Caspion-logo.png';
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const footerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -15,7 +15,7 @@ const listItemHover = {
   whileHover: { x: 10, scale: 1.05 },
   transition: { type: "spring", stiffness: 100 },
 };
-  
+
 const Footer = () => {
   const { t } = useTranslation();
   const year = new Date().getFullYear();
@@ -30,7 +30,12 @@ const Footer = () => {
     >
       <div className={styles.container}>
         <div className={styles.logoSection}>
-          <img className="logo mb-4" src={Logo} alt="Logo" style={{ height: '70px' }} />
+          <Link to="/" className={styles.footerBrand}>
+            <img className={styles.logoImage} src={Logo} alt="Caspion Logo" />
+            <p className={styles.logoTextCustom}>
+              <span>Caspion</span> <br /> Construction & Procurement
+            </p>
+          </Link>
         </div>
 
         <div className={styles.linksSection}>
@@ -47,10 +52,10 @@ const Footer = () => {
           <div>
             <h4>{t("footer.services.title")}</h4>
             <ul>
-              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.procurement")}</Link></motion.li>
-              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.suppliers")}</Link></motion.li>
-              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.enterprises")}</Link></motion.li>
-              <motion.li {...listItemHover}><Link to="/references">{t("footer.services.pricing")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/clients">{t("footer.services.procurement")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/clients">{t("footer.services.suppliers")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/clients">{t("footer.services.enterprises")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/clients">{t("footer.services.pricing")}</Link></motion.li>
             </ul>
           </div>
 

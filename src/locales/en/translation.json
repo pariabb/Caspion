@@ -2,8 +2,8 @@
     "header": {
         "menu1": "Home",
         "menu2": "About Us",
-        "menu3": "Our Products",
-        "menu4": "References",
+        "menu3": "Products",
+        "menu4": "Clients",
         "menu5": "Partners",
         "menu6": "Contact Us"
     },
@@ -15,7 +15,7 @@
         "subtitle2": "We connect you with tested suppliers worldwide — quality and transparency come first.",
         "subtitle3": "From analysis to delivery — we manage all stages, so you can focus on your core business.",
         "buttonText1": "Learn More",
-        "buttonText2": "Our References",
+        "buttonText2": "Our Clients",
         "buttonText3": "Contact Us",
         "section-title1": "Our Clients",
         "section-title2": "Fiber-Optic Products",
@@ -34,8 +34,7 @@
     },
     "about": {
         "title": "Caspion Construction and Procurement LLC",
-        "p1": "Since 2021, Caspion Construction and Procurement LLC has been one of the leading companies in Azerbaijan's sales market. By embracing this leadership, we aim to pioneer innovation in this field within our country.",
-        "p2": "Our company specializes in the sale of fiber-optic products, GPON equipment and accessories, telecommunications equipment and products, fiber-optic and submarine communication cables, electrical cables, and related accessories. Additionally, our product range includes metal and polyethylene pipes, clamps and related products, trailers and semi-trailers, control and measuring devices and equipment, spare parts, chemicals, and solutions. We also provide sales of industrial and energy sector equipment such as bearings, valves and control systems, pumps and compressors, metal cable trays, brackets, and their components.",
+        "p1": "Since 2021, Caspion Construction & Procurement LLC has been one of the leaders in the Azerbaijani market. By taking on this leading role, we strive to implement innovative solutions in this industry.",
         "p3": "First of all, it should be noted that our company has extensive experience in corporate supply of the above-mentioned and other products, which allows us to strengthen our clients' positions in the market economy and provide a competitive advantage. The attention and special approach we show to our work, partners, and clients are among the key factors that make us successful and distinguish us in our field. It is well known that the ever-evolving global and local sales markets demand new approaches and solutions. Guided by these requirements and based on our years of experience in sales, we continue to serve our customers. The wide range of equipment and products sold by Caspion Construction and Procurement LLC fully meets the needs and expectations of our business partners in terms of quality and performance. Furthermore, the products we offer are sourced directly from the manufacturer and delivered to clients after undergoing special technical inspections. Therefore, we fully guarantee the quality of the products we sell.",
         "p4": "Our company's core principles in client relationships are personalized approach, thorough analysis, and achieving maximum success in every project. Our serious and responsible attitude towards our work has earned us great respect in the industry. You can get acquainted with the partners we have gained thanks to our experience and professionalism in the 'Partners' section of our website.",
         "buttonText5": "Hide",
@@ -49,64 +48,101 @@
         "subtitle3": "Our Target",
         "subtitle3p1": "To deliver quality products with fast service...",
         "subtitle3p2": "Our target is to provide clients with optimal, original, and high-quality products along with fast delivery services. We also aim to ensure that clients obtain products under the most favorable conditions, offering them maximum quality and variety at minimal prices. As Caspion Construction and Procurement, we are ready to meet all your needs and expectations. Contact us, and our experienced team will help you find the right solutions!",
-        "p5": "At Caspion, we are ready to meet all your needs and requirements. Contact us, and together we will find the most suitable solutions for you and achieve success in your projects."
+        "p5": "At Caspion Construction & Procurement LLC, we are ready to meet all your needs and requirements. Contact us, and together we will find the most suitable solutions for you and achieve success in your projects."
     },
     "products": {
+        "telecommunication-cables-equipment": {
+            "title": "Telecommunication Cables and Equipment"
+        },
+        "electrical-cables-accessories": {
+            "title": "Electrical Cables and Accessories"
+        },
+        "irrigation-systems-accessories": {
+            "title": "Irrigation Systems and Accessories"
+        },
         "fiber-optic-products": {
             "title": "Fiber-optic products",
-            "description": "Fiber-optic products enable high-speed data transmission using light through optical fibers. They are widely used in modern telecommunications for reliable and fast connectivity."
+            "details": {
+                "description": "Fiber-optic products enable high-speed data transmission with light via optical fibers. Widely used in modern telecommunications for fast and reliable connections."
+            }
         },
         "gpon-equipment": {
             "title": "GPON equipment and accessories",
-            "description": "GPON (Gigabit Passive Optical Network) equipment includes OLTs, ONTs, splitters, and connectors used to deliver gigabit-speed internet over fiber networks."
+            "details": {
+                "description": "GPON (Gigabit Passive Optical Network) equipment includes OLT, ONT, splitters, and connectors, providing gigabit-speed internet over fiber networks."
+            }
         },
         "telecom-equipment": {
-            "title": "Telecommunications equipment and products",
-            "description": "This includes all devices and infrastructure used to transmit data over long distances, such as routers, switches, modems, antennas, and signal boosters."
+            "title": "Telecommunication equipment and products",
+            "details": {
+                "description": "Devices and infrastructure used for transmitting data over long distances, including routers, switches, modems, antennas, and signal boosters."
+            }
         },
         "fiber-optic-cables": {
             "title": "Fiber-optic cables",
-            "description": "These cables are made of glass or plastic fibers that transmit data as pulses of light, offering high bandwidth and low attenuation over long distances."
+            "details": {
+                "description": "Made from glass or plastic fibers, these cables transmit data as light pulses, providing high bandwidth and low loss over long distances."
+            }
         },
         "submarine-cables": {
             "title": "Submarine communication and power cables",
-            "description": "Submarine cables are laid on the seabed between land-based stations to carry telecommunication and power signals across continents and oceans."
+            "details": {
+                "description": "Submarine cables are laid across ocean floors to transmit communication and power signals between continents and islands."
+            }
         },
         "electrical-cables": {
             "title": "Electrical cables and accessories",
-            "description": "Electrical cables carry electric power, and accessories like connectors, joints, and terminals ensure safe and efficient connections."
+            "details": {
+                "description": "Electrical cables transmit power, and accessories like connectors, splices, and terminals ensure safe and efficient connections."
+            }
         },
         "pipes-clamps": {
-            "title": "Metal and polyethylene pipes, clamps, related products",
-            "description": "Used in infrastructure and construction, these include corrosion-resistant pipes and fastening clamps for water, gas, or fiber systems."
+            "title": "Metal and polyethylene pipes, clamps, and related products",
+            "details": {
+                "description": "Used in infrastructure and construction, these products include corrosion-resistant pipes and clamps for water, gas, and fiber systems."
+            }
         },
         "trailers": {
             "title": "Trailers and semi-trailers",
-            "description": "Vehicles designed to transport goods efficiently, trailers and semi-trailers are essential in logistics and supply chains."
+            "details": {
+                "description": "Vehicles designed for efficient cargo transportation, playing a key role in logistics and supply chains."
+            }
         },
         "control-devices": {
             "title": "Control and measurement devices, equipment, accessories, spare parts",
-            "description": "These devices monitor and control industrial and laboratory processes, ensuring precision, safety, and consistency."
+            "details": {
+                "description": "Used to monitor and measure industrial and laboratory processes, ensuring accuracy, safety, and stability."
+            }
         },
         "chemicals": {
             "title": "Chemicals and solutions",
-            "description": "Industrial and lab-grade chemicals used in manufacturing, cleaning, processing, and scientific experiments."
+            "details": {
+                "description": "Industrial and laboratory-grade chemicals used in manufacturing, cleaning, processing, and scientific research."
+            }
         },
         "bearings": {
             "title": "Bearings",
-            "description": "Mechanical components that reduce friction between moving parts and support rotational or linear motion."
+            "details": {
+                "description": "Mechanical components that reduce friction between moving parts and support rotational or linear motion."
+            }
         },
         "valves-controls": {
-            "title": "Valves & controls",
-            "description": "Devices used to control the flow and pressure of liquids or gases in a system. Common in pipelines and mechanical setups."
+            "title": "Valves and control systems",
+            "details": {
+                "description": "Devices used to manage the flow and pressure of liquids or gases in a system. Widely used in piping systems and mechanical installations."
+            }
         },
         "pumps-compressors": {
-            "title": "Pumps, compressors",
-            "description": "Pumps move liquids, while compressors increase the pressure of gases. Both are essential in industrial systems."
+            "title": "Pumps and compressors",
+            "details": {
+                "description": "Pumps move liquids, while compressors increase the pressure of gases. Both play essential roles in industrial systems."
+            }
         },
         "cable-trays": {
             "title": "Metal cable trays, brackets, and their parts",
-            "description": "Support structures that hold and organize cables in electrical and communication systems."
+            "details": {
+                "description": "Structures used to support and organize cables in electrical and communication systems."
+            }
         },
         "buttonText7": "Back to Products"
     },
@@ -139,7 +175,7 @@
     "footer": {
         "company.title": "Company",
         "company.about": "About Us",
-        "company.references": "References",
+        "company.references": "Clients",
         "company.partners": "Partners",
         "company.mission": "Our Mission",
         "services.title": "Services",
@@ -185,7 +221,11 @@
             "tekiz": "Tekiz Construction",
             "agrarco": "Agrarco",
             "archico": "Archico Project Services",
-            "isbsu": "United Water Supply Service for Large Cities"
+            "isbsu": "United Water Supply Service for Large Cities",
+            "ddla": "State Maritime and Port Agency",
+            "azenet": "Azenet LLC",
+            "cpb": "City Point Baku",
+            "detal": "Detal Construction"
         }
     }
 }

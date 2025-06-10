@@ -30,7 +30,7 @@ const SwipeSlider = () => {
       title: t("home.title2"),
       subtitle: t("home.subtitle2"),
       buttonText: t("home.buttonText2"),
-      path: "/references",
+      path: "/clients",
     },
     {
       image: SwiperImg3,

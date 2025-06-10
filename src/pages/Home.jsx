@@ -8,7 +8,7 @@ import FiberOpticCabel1 from '../assets/pic/homepic/fiber-optic-cables.jpg'
 import FiberOpticCabel2 from '../assets/pic/homepic/Optical-fiber.webp'
 import FiberOpticCabel3 from '../assets/pic/homepic/fiber-cabel.avif'
 import FiberOpticCabel4 from '../assets/pic/homepic/giphy.gif'
-import ReferencesSwiper from '../components/ReferencesSwiper';
+import ReferencesSwiper from '../components/ClientsSwiper';
 import { useTranslation } from 'react-i18next';
 
 

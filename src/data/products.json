@@ -1,58 +1,135 @@
 [
   {
-    "id": "fiber-optic-products",
-    "image": "/products/fiberoptic.avif"
+    "id": "telecommunication-cables-equipment",
+    "image": "/products/fiberoptic.avif",
+    "type": "category",
+    "subcategories": [
+      {
+        "id": "fiber-optic-products",
+        "image": "/products/fiberoptic.avif",
+        "type": "product",
+        "details": {
+          "description": "Various fiber-optic products for high-speed data transmission."
+        }
+      },
+      {
+        "id": "gpon-equipment",
+        "image": "/products/gpon.avif",
+        "type": "product",
+        "details": {
+          "description": "GPON equipment and accessories for passive optical networks."
+        }
+      },
+      {
+        "id": "telecom-equipment",
+        "image": "/products/telecommunication.avif",
+        "type": "product",
+        "details": {
+          "description": "General telecommunication equipment and related products."
+        }
+      },
+      {
+        "id": "fiber-optic-cables",
+        "image": "/products/fiberoptic_2.avif",
+        "type": "product",
+        "details": {
+          "description": "High-quality fiber-optic cables for diverse applications."
+        }
+      }
+    ]
   },
   {
-    "id": "gpon-equipment",
-    "image": "/products/gpon.avif"
+    "id": "electrical-cables-accessories",
+    "image": "/products/electricalcabel.avif",
+    "type": "category",
+    "subcategories": [
+      {
+        "id": "submarine-cables",
+        "image": "/products/submarine.jpg",
+        "type": "product",
+        "details": {
+          "description": "Robust submarine communication and power cables."
+        }
+      },
+      {
+        "id": "electrical-cables",
+        "image": "/products/electricalcabel.avif",
+        "type": "product",
+        "details": {
+          "description": "A wide range of electrical cables and accessories."
+        }
+      },
+      {
+        "id": "cable-trays",
+        "image": "/products/metalcabletrays.jpg",
+        "type": "product",
+        "details": {
+          "description": "Metal cable trays for efficient cable management."
+        }
+      }
+    ]
   },
   {
-    "id": "telecom-equipment",
-    "image": "/products/telecommunication.avif"
-  },
-  {
-    "id": "fiber-optic-cables",
-    "image": "/products/fiberoptic_2.avif"
-  },
-  {
-    "id": "submarine-cables",
-    "image": "/products/submarine.jpg"
-  },
-  {
-    "id": "electrical-cables",
-    "image": "/products/electricalcabel.avif"
-  },
-  {
-    "id": "pipes-clamps",
-    "image": "/products/metal.avif"
+    "id": "irrigation-systems-accessories",
+    "image": "/products/metal.avif",
+    "type": "category",
+    "subcategories": [
+      {
+        "id": "pipes-clamps",
+        "image": "/products/metal.avif",
+        "type": "product",
+        "details": {
+          "description": "Metal and polyethylene pipes, clamps, and related products for various systems."
+        }
+      },
+      {
+        "id": "valves-controls",
+        "image": "/products/valves.avif",
+        "type": "product",
+        "details": {
+          "description": "Valves and control systems for fluid management."
+        }
+      },
+      {
+        "id": "pumps-compressors",
+        "image": "/products/pumps.jpg",
+        "type": "product",
+        "details": {
+          "description": "Pumps and compressors for industrial and agricultural use."
+        }
+      }
+    ]
   },
   {
     "id": "trailers",
-    "image": "/products/trailers.avif"
+    "image": "/products/trailers.avif",
+    "type": "product",
+    "details": {
+      "description": "Various types of trailers and semi-trailers for transportation."
+    }
   },
   {
     "id": "control-devices",
-    "image": "/products/measurement.avif"
+    "image": "/products/measurement.avif",
+    "type": "product",
+    "details": {
+      "description": "Control and measurement devices, equipment, and accessories."
+    }
   },
   {
     "id": "chemicals",
-    "image": "/products/chemical.avif"
+    "image": "/products/chemical.avif",
+    "type": "product",
+    "details": {
+      "description": "A range of chemicals and solutions for different applications."
+    }
   },
   {
     "id": "bearings",
-    "image": "/products/bearings.avif"
-  },
-  {
-    "id": "valves-controls",
-    "image": "/products/valves.avif"
-  },
-  {
-    "id": "pumps-compressors",
-    "image": "/products/pumps.jpg"
-  },
-  {
-    "id": "cable-trays",
-    "image": "/products/metalcabletrays.jpg"
+    "image": "/products/bearings.avif",
+    "type": "product",
+    "details": {
+      "description": "High-quality bearings for machinery and equipment."
+    }
   }
 ]

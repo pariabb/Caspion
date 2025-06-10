@@ -38,6 +38,16 @@ import partner30 from "../assets/pic/partners/vindustries_logo.png";
 import partner31 from "../assets/pic/partners/Yokogawa_Logo.webp";
 import partner32 from "../assets/pic/partners/kabelni_alyans_logo.png";
 import partner33 from "../assets/pic/partners/iport_logo.png";
+import partner34 from '../assets/pic/references/STP_MMC_logo.png';
+import partner35 from '../assets/pic/partners/sec-nav-polaris-quick-support.png';
+import partner36 from '../assets/pic/partners/ELCOME-INTERNATIONAL-LOGO-2018.svg';
+import partner37 from '../assets/pic/partners/iek-logo.svg';
+import partner38 from '../assets/pic/partners/tetra-logo.svg';
+import partner39 from '../assets/pic/partners/scarlet-logo.webp';
+
+
+
+
 import { useTranslation } from "react-i18next";
 
 const partners = [
@@ -45,7 +55,7 @@ const partners = [
   partner8, partner9, partner10, partner11, partner12, partner13,
   partner14, partner15, partner16, partner17, partner18, partner19,
   partner20, partner21, partner22, partner23, partner24, partner25,
-  partner26, partner27, partner28, partner29, partner30, partner31, partner32, partner33
+  partner26, partner27, partner28, partner29, partner30, partner31, partner32, partner33,partner34,partner35,partner36,partner37,partner38,partner39
 ];
 
 const Partners = () => {

@@ -4,7 +4,7 @@ import { Autoplay, Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-import '../assets/css/references_swiper.css';
+import '../assets/css/clients_swiper.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ const logos = [
 ];
 
 
-const ReferencesSwiper = () => {
+const ClientsSwiper = () => {
 
     const { t } = useTranslation();
 
@@ -77,7 +77,7 @@ const ReferencesSwiper = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <Link to='/references'>
+            <Link to='/clients'>
                 <button
                     className="swiper-button"
                 >{t('home.buttonText1')}</button>
@@ -86,4 +86,4 @@ const ReferencesSwiper = () => {
     );
 };
 
-export default ReferencesSwiper;
+export default ClientsSwiper;

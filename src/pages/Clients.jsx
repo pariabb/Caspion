@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader';
-import '../assets/css/references.css';
-import { FaHandshake } from 'react-icons/fa'; 
+import '../assets/css/clients.css';
+import { FaHandshake } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 
@@ -32,6 +32,11 @@ import stp from '../assets/pic/references/STP_MMC_logo.png';
 import tekiz from '../assets/pic/references/tekiz-insaat-logo.png';
 import texno from '../assets/pic/references/texno_logo.png';
 import tork from '../assets/pic/references/tork_logo.png';
+import ddla from '../assets/pic/references/logo_ddla.png'
+import cpb from '../assets/pic/references/cpt-logo.png'
+import detal from '../assets/pic/references/detal-logo.png'
+import azenet from '../assets/pic/references/azenet logo.png'
+
 
 const referenceData = [
   { id: 1, name: 'idda', logo: idda },
@@ -60,10 +65,15 @@ const referenceData = [
   { id: 24, name: 'tekiz', logo: tekiz },
   { id: 25, name: 'agrarco', logo: agrarco },
   { id: 26, name: 'archico', logo: archico },
-  { id: 27, name: 'isbsu', logo: isbsu }
+  { id: 27, name: 'isbsu', logo: isbsu },
+  { id: 28, name: 'ddla', logo: ddla },
+  { id: 29, name: 'cpb', logo: cpb },
+  { id: 30, name: 'detal', logo: detal },
+  { id: 31, name: 'azenet', logo: azenet }
+
 ];
 
-const References = () => {
+const Clients = () => {
   const { t } = useTranslation();
 
   return (
@@ -87,4 +97,4 @@ const References = () => {
   );
 };
 
-export default References;
+export default Clients;

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageHeader from '../components/PageHeader';
 import styles from './About.module.css';
-import AboutImg from '../assets/pic/about_img.avif'
+import AboutImg from '../assets/pic/homepic/giphy.gif'
+
 import { useTranslation } from 'react-i18next';
 
 

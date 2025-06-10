@@ -4,12 +4,13 @@ import Navbar from './components/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Products from './pages/Products'
-import References from './pages/References'
+import Clients from './pages/Clients'
 import Partners from './pages/Partners'
 import Contact from './pages/Contact'
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFoundPage';
 import ProductDetail from './pages/ProductDetail';
+import CategoryPage from './pages/CategoryPage';
 
 const Main = () => {
   return (
@@ -20,8 +21,10 @@ const Main = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="/references" element={<References />} />
+          <Route path="/products/:categoryId" element={<CategoryPage />} />
+          <Route path="/products/:categoryId/:productId" element={<ProductDetail />} />
+          <Route path="/products/details/:id" element={<ProductDetail />} />
+          <Route path="/clients" element={<Clients />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFoundPage />} />
