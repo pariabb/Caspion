@@ -3,19 +3,19 @@
   color: #ffffff;
   padding: 60px 20px 20px;
   font-family: "Segoe UI", sans-serif;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
-.container { 
+.container {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%; 
+  width: 100%;
   margin: auto;
-  padding-left: 15px; 
-  padding-right: 15px; 
-  column-gap: 50px; 
-  max-width: 1200px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  column-gap: 50px;
+  max-width: 1200px;
 }
 
 .logoSection {
@@ -56,23 +56,22 @@
   font-size: clamp(1.3rem, 2vw, 1.3rem);
 }
 
-
 .linksSection {
   display: flex;
   gap: 50px;
-  flex: 2 1 500px; 
+  flex: 2 1 500px;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start; 
-  flex-basis: auto; 
-  overflow-x: auto; 
-  -webkit-overflow-scrolling: touch; 
-  padding-bottom: 5px; 
+  align-items: flex-start;
+  flex-basis: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 5px;
 }
 
 .linksSection h4 {
   margin-bottom: 20px;
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem); 
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   white-space: nowrap;
 }
 
@@ -82,25 +81,23 @@
 }
 
 .linksSection li a {
-  text-decoration: none; 
-  color: #ffffff;         
+  text-decoration: none;
+  color: #ffffff;
   margin: 8px 0;
   display: inline-block;
   transition: color 0.3s ease;
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem); 
-  white-space: nowrap; 
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  white-space: nowrap;
 }
 
 .linksSection li a:hover {
   color: #F4B416;
 }
 
-
 .linksSection > div {
-  flex: 1 1 0; 
-  min-width: 120px; 
+  flex: 1 1 0;
+  min-width: 120px;
 }
-
 
 .subscribeSection {
   flex: 1 1 250px;
@@ -109,7 +106,7 @@
 
 .subscribeSection h4 {
   margin-bottom: 25px;
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem); 
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 .subscribeSection form {
@@ -131,7 +128,7 @@
   height: 50px;
   border-radius: 30px;
   font-weight: 500;
-  font-size: clamp(1rem, 1.8vw, 1.1rem); 
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -167,23 +164,22 @@
   color: #888;
 }
 
-
 @media (max-width: 992px) {
   .container {
-    flex-direction: row; 
-    align-items: flex-start; 
-    row-gap: 40px; 
-    column-gap: 30px; 
-    justify-content: center; 
+    flex-direction: row;
+    align-items: flex-start;
+    row-gap: 40px;
+    column-gap: 30px;
+    justify-content: center;
   }
 
   .logoSection {
-    align-items: center; 
-    flex: 0 0 auto; 
+    align-items: center;
+    flex: 0 0 auto;
   }
 
   .footerBrand {
-    align-items: center; 
+    align-items: center;
   }
 
   .logoImage {
@@ -191,29 +187,31 @@
   }
 
   .logoTextCustom {
-    text-align: center; 
+    text-align: center;
   }
 
   .linksSection {
-    flex-wrap: nowrap; 
-    gap: 20px; 
-    justify-content: center; 
-    text-align: center; 
-    flex: 1 1 auto; 
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start; 
+    text-align: left; 
+    flex: 1 1 auto;
   }
 
   .linksSection > div {
-    min-width: 100px; 
-    max-width: 150px; 
-    font-size: clamp(1rem, 1.4vw, 1.2rem); 
+    min-width: 100px;
+    max-width: 150px;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
   }
 
   .linksSection h4 {
-    font-size: clamp(1.2rem, 1.9vw, 1.2rem); 
+    font-size: clamp(1.2rem, 1.9vw, 1.2rem);
+    text-align: left; 
   }
 
   .linksSection li a {
-    font-size: clamp(0.9rem, 1.2vw, 1rem); 
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    text-align: left; 
   }
 
   .subscribeSection {
@@ -224,7 +222,7 @@
 
   .socials {
     justify-content: center;
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
 
@@ -235,24 +233,26 @@
 
   .container {
     row-gap: 30px;
-    column-gap: 15px; 
+    column-gap: 15px;
   }
 
   .logoImage {
-    height: 55px; 
+    height: 55px;
   }
 
   .logoTextCustom {
-    font-size: clamp(1rem, 1.4vw, 1.1rem); 
+    font-size: clamp(1rem, 1.4vw, 1.1rem);
     margin-top: 4px;
   }
 
   .logoTextCustom span {
-    font-size: clamp(1.2rem, 1.7vw, 1.3rem); 
+    font-size: clamp(1.2rem, 1.7vw, 1.3rem);
   }
 
   .linksSection {
-    gap: 10px; 
+    gap: 10px;
+    justify-content: flex-start; 
+    text-align: left;
   }
 
   .linksSection > div {
@@ -261,30 +261,37 @@
   }
 
   .linksSection h4 {
-    font-size: clamp(1.1rem, 1.7vw, 1.3rem); 
+    font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+    text-align: left; 
   }
 
   .linksSection li a {
-    font-size: clamp(0.7rem, 1.2vw, 1.1rem); 
+    font-size: clamp(0.7rem, 1.2vw, 1.1rem);
+    text-align: left;
   }
 
   .subscribeSection input,
   .subscribeSection button {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 
   .socials a {
-    font-size: 18px; 
+    font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
   .logoImage {
-    height: 50px; 
+    height: 50px;
   }
 
   .logoTextCustom {
     font-size: 0.8rem;
+  }
+
+  .linksSection {
+    justify-content: flex-start; 
+    text-align: left;
   }
 
   .linksSection h4,
