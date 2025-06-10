@@ -12,19 +12,15 @@
   background-color: #fff !important;
 }
 
-
 .main-header.shrink {
   padding: 6px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   animation: slideDown 0.3s ease-in-out;
 }
 
-
-
 .navbar-brand p {
   font-size: 15px !important;
   color: #1F7088;
-
 }
 
 .navbar-brand p span {
@@ -43,12 +39,6 @@
   width: 60px;
   margin-top: 5px;
 }
-
-/* 
-.navbar-collapse{
-  margin: 0 !important;
-  padding: 0 !important;
-} */
 
 .nav-link {
   color: #0d6efd;
@@ -109,13 +99,10 @@
   box-shadow: none;
 }
 
-
-
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
   }
-
   to {
     transform: translateY(0);
   }
@@ -128,14 +115,10 @@
   }
 
   .navbar-brand p {
-    display: none;
-  }
-
-  .navbar-brand p {
     font-size: 12px !important;
     color: #1F7088;
     margin-top: 9px !important;
-
+    display: none !important;
   }
 
   .navbar-brand p span {
@@ -163,6 +146,14 @@
     left: 50%;
     transform: translateX(-50%);
     top: 20px;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+
+  .lang-button .dropdown {
+      width: 100%;
+      padding: 0 15px;
   }
 
   .lang-button2 {
@@ -175,21 +166,23 @@
     transition: height 0.3s ease;
     margin: 0 !important;
   }
+
+  .navbar .container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-
   .navbar-brand p {
     display: block !important;
   }
 
-
   .custom-toggler {
     font-size: 30px;
-
   }
-
-
 }
 
 @media screen and (min-width:1000px) and (max-width: 1024px) {
@@ -197,4 +190,3 @@
     display: none !important;
   }
 }
-

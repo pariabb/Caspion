@@ -265,7 +265,7 @@
   }
 
   .linksSection li a {
-    font-size: clamp(0.8rem, 1.2vw, 1.1rem); 
+    font-size: clamp(0.7rem, 1.2vw, 1.1rem); 
   }
 
   .subscribeSection input,
@@ -293,6 +293,6 @@
   }
 
   .linksSection li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }

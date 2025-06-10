@@ -6,7 +6,6 @@ import '../assets/css/header.css';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -29,11 +28,10 @@ const Header = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-
   const changeLang = (lang) => {
-    i18next.changeLanguage(lang)
+    i18next.changeLanguage(lang);
     localStorage.setItem('i18nextLng', lang);
-  }
+  };
 
   const { t } = useTranslation();
 
@@ -43,21 +41,22 @@ const Header = () => {
     t('header.menu3'),
     t('header.menu4'),
     t('header.menu5'),
-    t('header.menu6')
+    t('header.menu6'),
   ];
 
   return (
     <header className={`main-header ${isSticky ? 'shrink fixed-top' : ''}`}>
       <nav className="navbar navbar-expand-lg">
-        <div className="container d-flex align-items-center justify-content-between " >
-
+        <div className="container d-flex align-items-center justify-content-between">
           <NavLink className="navbar-brand fw-bold d-flex" to="/">
             <img className="logo" src={Logo} alt="Logo" />
-            <p className='ms-2 mt-1 text-center d-lg-block d-md-block d-sm-none'> <span>Caspion</span> <br /> Construction & Procurement</p>
+            <p className='ms-2 mt-1 text-center d-lg-block d-md-block d-sm-none'>
+              <span>Caspion</span> <br /> Construction & Procurement
+            </p>
           </NavLink>
 
-          <div className="lang-button d-lg-none d-md-block d-sm-block mx-auto">
-            <div className=" dropdown position-relative">
+          <div className="lang-button d-lg-none d-md-block d-sm-block">
+            <div className="dropdown position-relative">
               <button
                 className="btn btn-primary fw-bold rounded-pill px-4 py-2 dropdown-toggle"
                 type="button"
@@ -70,7 +69,6 @@ const Header = () => {
               >
                 {i18next.language.toUpperCase()}
               </button>
-
 
               <ul
                 className="dropdown-menu mt-2 dropdown-menu-end"
@@ -86,7 +84,6 @@ const Header = () => {
                 <button className="dropdown-item" onClick={() => { changeLang('ru'); setMenuOpen(false); }}>
                   RU
                 </button>
-
               </ul>
             </div>
           </div>
@@ -137,10 +134,8 @@ const Header = () => {
               <button className="dropdown-item" onClick={() => { changeLang('ru'); setMenuOpen(false); }}>
                 RU
               </button>
-
             </ul>
           </div>
-
         </div>
       </nav>
     </header>
