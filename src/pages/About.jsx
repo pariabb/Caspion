@@ -71,7 +71,7 @@ const About = () => {
             />
           </motion.div>
 
-          <motion.div className={styles.card} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
+          <motion.div id="mission" className={styles.card} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
             <h3>{t("about.subtitle1")}</h3>
             <p>
               {t("about.subtitle1p1")}

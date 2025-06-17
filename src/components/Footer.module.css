@@ -58,21 +58,20 @@
 
 .linksSection {
   display: flex;
-  gap: 50px;
-  flex: 2 1 500px;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center; /* Ortaya alındı */
   align-items: flex-start;
-  flex-basis: auto;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  gap: 40px;
+  flex: 2 1 500px;
   padding-bottom: 5px;
+  overflow-x: hidden; /* Scroll problemini həll edir */
 }
 
 .linksSection h4 {
   margin-bottom: 20px;
   font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .linksSection ul {
@@ -87,7 +86,8 @@
   display: inline-block;
   transition: color 0.3s ease;
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-  white-space: nowrap;
+  white-space: normal;  /* Scroll problemini aradan qaldırır */
+  word-break: break-word;
 }
 
 .linksSection li a:hover {
@@ -95,13 +95,16 @@
 }
 
 .linksSection > div {
-  flex: 1 1 0;
-  min-width: 120px;
+  flex: 1 1 120px;
+  max-width: 160px;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .subscribeSection {
   flex: 1 1 250px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .subscribeSection h4 {
@@ -143,7 +146,7 @@
 .socials {
   margin-top: 20px;
   display: flex;
-  margin-left: 10px;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -163,6 +166,8 @@
   font-size: 13px;
   color: #888;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 992px) {
   .container {
@@ -191,27 +196,14 @@
   }
 
   .linksSection {
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: flex-start; 
-    text-align: left; 
-    flex: 1 1 auto;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
   }
 
   .linksSection > div {
     min-width: 100px;
-    max-width: 150px;
-    font-size: clamp(1rem, 1.4vw, 1.2rem);
-  }
-
-  .linksSection h4 {
-    font-size: clamp(1.2rem, 1.9vw, 1.2rem);
-    text-align: left; 
-  }
-
-  .linksSection li a {
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
-    text-align: left; 
+    max-width: 140px;
   }
 
   .subscribeSection {
@@ -222,7 +214,6 @@
 
   .socials {
     justify-content: center;
-    margin-left: 0;
   }
 }
 
@@ -250,24 +241,22 @@
   }
 
   .linksSection {
-    gap: 10px;
-    justify-content: flex-start; 
-    text-align: left;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
   }
 
   .linksSection > div {
-    min-width: 80px;
-    max-width: 120px;
+    min-width: 90px;
+    max-width: 130px;
   }
 
   .linksSection h4 {
     font-size: clamp(1.1rem, 1.7vw, 1.3rem);
-    text-align: left; 
   }
 
   .linksSection li a {
-    font-size: clamp(0.7rem, 1.2vw, 1.1rem);
-    text-align: left;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
   }
 
   .subscribeSection input,
@@ -281,25 +270,52 @@
 }
 
 @media (max-width: 480px) {
+  .linksSection {
+    flex-wrap: nowrap; /* Yan-yana düzülmə */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .linksSection > div {
+    flex: 1;
+    min-width: 0;
+    max-width: 100px;
+    text-align: left;
+  }
+
+  .linksSection h4,
+  .subscribeSection h4 {
+    font-size: 1rem;
+  }
+
+  .linksSection li a {
+    font-size: 0.72rem;
+    word-break: break-word;
+  }
+
   .logoImage {
     height: 50px;
   }
 
   .logoTextCustom {
     font-size: 0.8rem;
+    white-space: normal;
+    word-break: break-word;
   }
 
-  .linksSection {
-    justify-content: flex-start; 
-    text-align: left;
+  .logoTextCustom span {
+    font-size: 1rem;
   }
 
-  .linksSection h4,
-  .subscribeSection h4 {
-    font-size: 1.2rem;
+  .subscribeSection input,
+  .subscribeSection button {
+    font-size: 0.8rem;
   }
 
-  .linksSection li a {
-    font-size: 0.7rem;
+  .socials a {
+    font-size: 18px;
   }
 }
+

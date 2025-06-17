@@ -110,7 +110,11 @@
             }
         },
         "control-devices": {
-            "title": "Nəzarət və ölçü cihazları, avadanlıqlar, aksesuarlar, ehtiyat hissələri",
+            "title": "Nəzarət və ölçü cihazları, avadanlıqlar, aksesuarlar, ehtiyat hissələri"
+          
+        },
+         "control-devices-id": {
+            "title": "Nəzarət və ölçü cihazları",
             "details": {
                 "description": "Sənaye və laboratoriya proseslərinə nəzarət etmək və onları ölçmək üçün istifadə olunur, dəqiqlik, təhlükəsizlik və sabitlik təmin edir."
             }

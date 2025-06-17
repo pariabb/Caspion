@@ -6,10 +6,18 @@
     "subcategories": [
       {
         "id": "fiber-optic-products",
-        "image": "/products/fiberoptic.avif",
+        "image": "/products/fiberoptic_1.avif",
         "type": "product",
         "details": {
           "description": "Various fiber-optic products for high-speed data transmission."
+        }
+      },
+      {
+        "id": "trailers",
+        "image": "/products/trailer.jpg",
+        "type": "product",
+        "details": {
+          "description": "Various types of trailers and semi-trailers for transportation."
         }
       },
       {
@@ -101,20 +109,26 @@
     ]
   },
   {
-    "id": "trailers",
-    "image": "/products/trailers.avif",
+    "id": "control-devices",
+    "image": "/products/control.avif",
+    "type": "category",
+    "subcategories": [
+  {
+    "id": "bearings",
+    "image": "/products/bearings.avif",
     "type": "product",
     "details": {
-      "description": "Various types of trailers and semi-trailers for transportation."
+      "description": "High-quality bearings for machinery and equipment."
     }
   },
   {
-    "id": "control-devices",
+    "id": "control-devices-id",
     "image": "/products/measurement.avif",
     "type": "product",
     "details": {
       "description": "Control and measurement devices, equipment, and accessories."
     }
+  }]
   },
   {
     "id": "chemicals",
@@ -122,14 +136,6 @@
     "type": "product",
     "details": {
       "description": "A range of chemicals and solutions for different applications."
-    }
-  },
-  {
-    "id": "bearings",
-    "image": "/products/bearings.avif",
-    "type": "product",
-    "details": {
-      "description": "High-quality bearings for machinery and equipment."
     }
   }
 ]

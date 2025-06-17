@@ -72,7 +72,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className={styles.form}>
+        <form id='pricing' onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.formRow}>
             <div className={styles.inputWrapperHalf}>
               <input

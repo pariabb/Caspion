@@ -109,8 +109,12 @@
             }
         },
         "control-devices": {
-            "title": "Control and measurement devices, equipment, accessories, spare parts",
-            "details": {
+            "title": "Control and measurement devices, equipment, accessories, spare parts"
+           
+        },
+        "control-devices-id": {
+            "title": "Control and measurement devices",
+             "details": {
                 "description": "Used to monitor and measure industrial and laboratory processes, ensuring accuracy, safety, and stability."
             }
         },
