@@ -110,11 +110,10 @@
         },
         "control-devices": {
             "title": "Control and measurement devices, equipment, accessories, spare parts"
-           
         },
         "control-devices-id": {
             "title": "Control and measurement devices",
-             "details": {
+            "details": {
                 "description": "Used to monitor and measure industrial and laboratory processes, ensuring accuracy, safety, and stability."
             }
         },
@@ -186,7 +185,7 @@
         "services.procurement": "Procurement Solutions",
         "services.suppliers": "For Suppliers",
         "services.enterprises": "For Enterprises",
-        "services.pricing": "Pricing",
+        "services.pricing": "Evaluation",
         "contact.title": "Contact",
         "contact.help": "Help Center",
         "contact.contactUs": "Contact Us",
@@ -230,6 +229,24 @@
             "azenet": "Azenet LLC",
             "cpb": "City Point Baku",
             "detal": "Detal Construction"
+        }
+    },
+    "services": {
+        "procurement": {
+            "title": "Procurement Solutions",
+            "description": "In the modern business landscape, efficient procurement is a cornerstone of competitive advantage. At Caspion Construction & Procurement LLC, we offer tailored procurement solutions designed to match your organization’s priorities and goals. Through advanced technologies and analytics, we streamline your procurement cycle, reduce costs, and bring greater transparency. Manage orders, compare offers, and make faster decisions through our centralized platform."
+        },
+        "suppliers": {
+            "title": "For Suppliers",
+            "description": "Strong and lasting supplier collaboration is a core value at Caspion Construction & Procurement LLC. Our platform provides suppliers with market access, proposal submissions, tender participation, and real-time feedback. Use the dedicated supplier dashboard to upload documents, track statuses, and stay fully in control. Our fair evaluation system helps foster effective partnerships."
+        },
+        "companies": {
+            "title": "For Companies",
+            "description": "Caspion Construction & Procurement LLC offers powerful solutions to help businesses improve their procurement processes and control spending. Whether you're a large enterprise or an SME, our platform enables you to digitalize procurement, compare supplier offers, and make smart, informed decisions. Achieve higher efficiency with automated workflows and full visibility across your supply chain."
+        },
+        "evaluation": {
+            "title": "Evaluation",
+            "description": "The evaluation system developed by Caspion Construction & Procurement LLC allows for an objective assessment of supplier performance. Factors such as quality, delivery time, document accuracy, and communication skills are taken into account. This transparent system helps reduce risk and supports confident decision-making."
         }
     }
 }

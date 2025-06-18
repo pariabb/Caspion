@@ -111,9 +111,8 @@
         },
         "control-devices": {
             "title": "Nəzarət və ölçü cihazları, avadanlıqlar, aksesuarlar, ehtiyat hissələri"
-          
         },
-         "control-devices-id": {
+        "control-devices-id": {
             "title": "Nəzarət və ölçü cihazları",
             "details": {
                 "description": "Sənaye və laboratoriya proseslərinə nəzarət etmək və onları ölçmək üçün istifadə olunur, dəqiqlik, təhlükəsizlik və sabitlik təmin edir."
@@ -227,10 +226,28 @@
             "agrarco": "Agrarco",
             "archico": "Archico Layihə Xidmətləri",
             "isbsu": "İri Şəhərlərin Birləşmiş Su Təchizatı Xidməti",
-            "ddla":"Dövlət Dəniz və Liman Agentliyi",
-            "azenet":"Azenet MMC",
-            "cpb":"City Point Baku",
-            "detal":"Detal İnşaat"
+            "ddla": "Dövlət Dəniz və Liman Agentliyi",
+            "azenet": "Azenet MMC",
+            "cpb": "City Point Baku",
+            "detal": "Detal İnşaat"
+        }
+    },
+    "services": {
+        "procurement": {
+            "title": "Satınalma Həlləri",
+            "description": "Müasir biznes dünyasında effektiv satınalma prosesləri rəqabət üstünlüyünün əsas amilidir. Caspion Construction & Procurement LLC olaraq, şirkətinizin ehtiyac və prioritetlərinə uyğun fərdiləşdirilmiş satınalma həlləri təqdim edirik. Texnoloji imkanlarımız və analitik vasitələrimiz vasitəsilə satınalma dövriyyənizi optimallaşdırır, xərcləri azaldır və prosesi şəffaflaşdırırıq. Mərkəzləşdirilmiş platformamızla sifarişləri idarə etmək, təklifləri müqayisə etmək və qərarlarınızı sürətləndirmək daha asan olacaq."
+        },
+        "suppliers": {
+            "title": "Təchizatçılar üçün",
+            "description": "Təchizatçılarla güclü və uzunmüddətli əməkdaşlıq Caspion Construction & Procurement LLC üçün əsas dəyərlərdəndir. Platformamız sizə bazarlara çıxış, təkliflərin göndərilməsi, tenderlərdə iştirak və real vaxtda məlumat axını təmin edir. Təchizatçı paneli vasitəsilə sənədlərinizi yükləyin, statusları izləyin və bütün prosesi nəzarətdə saxlayın. Ədalətli qiymətləndirmə sistemi ilə effektiv tərəfdaşlıq qurmağa imkan yaradırıq."
+        },
+        "companies": {
+            "title": "Şirkətlər üçün",
+            "description": "Caspion Construction & Procurement LLC, biznesinizin satınalma fəaliyyətlərini təkmilləşdirmək və xərclərə nəzarət etmək üçün güclü həllər təqdim edir. İstər iri müəssisə, istərsə də KOB olun, platformamız sizə satınalmaları rəqəmsallaşdırmağa, təklifləri müqayisə etməyə və ağıllı qərarlar verməyə imkan yaradır. Avtomatlaşdırılmış proseslər və hesabatlarla satınalma dövriyyənizi daha məhsuldar hala gətirin."
+        },
+        "evaluation": {
+            "title": "Qiymətləndirmə",
+            "description": "Caspion Construction & Procurement LLC tərəfindən hazırlanmış qiymətləndirmə sistemi, təchizatçıların fəaliyyətini obyektiv meyarlarla analiz etməyə imkan verir. Keyfiyyət, çatdırılma vaxtı, sənəd düzgünlüyü və kommunikasiya bacarıqları kimi aspektlər nəzərə alınaraq təhlil edilir. Bu sistem sizə riskləri azaltmağa və daha düzgün qərarlar verməyə kömək edəcək."
         }
     }
 }

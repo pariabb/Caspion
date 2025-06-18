@@ -53,10 +53,10 @@ const Footer = () => {
           <div>
             <h4>{t("footer.services.title")}</h4>
             <ul>
-              <motion.li {...listItemHover}><Link to="/">{t("footer.services.procurement")}</Link></motion.li>
-              <motion.li {...listItemHover}><Link to="/partners">{t("footer.services.suppliers")}</Link></motion.li>
-              <motion.li {...listItemHover}><Link to="/clients">{t("footer.services.enterprises")}</Link></motion.li>
-              <motion.li {...listItemHover}><HashLink smooth to="/contact#pricing">{t("footer.services.pricing")}</HashLink></motion.li>
+              <motion.li {...listItemHover}><Link to="/procurement">{t("footer.services.procurement")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/suppliers">{t("footer.services.suppliers")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/companies">{t("footer.services.enterprises")}</Link></motion.li>
+              <motion.li {...listItemHover}><Link to="/evaluation">{t("footer.services.pricing")}</Link></motion.li>
             </ul>
           </div>
 
